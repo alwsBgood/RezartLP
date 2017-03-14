@@ -710,7 +710,7 @@
   }
   .slide:before{
     position: absolute;
-    content: 'команды';
+    content: 'команда';
     left: 40px;
     top: 45px;
     font: 14px $bold_font;
@@ -723,6 +723,8 @@
       display: inline-block;
       text-align: left;
       margin-bottom: 25px;
+      max-width: 140px;
+      vertical-align: top;
       .name{
         font: 18px $bold_font;
         color: #28292d;
@@ -1075,4 +1077,4 @@ footer{
 @import "../libs/niftymodal/component.css";
 @import "../libs/slick/slick.min.css";
 @import "../css/calculator.css";
-// @import "../fonts/font-awesome/font-awesome.min.css"
+@import "../fonts/font-awesome/font-awesome.min.css"

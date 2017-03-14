@@ -430,14 +430,14 @@ $(document).ready(function(){
 });
 
 
-$(document).ready(function(){
- $('.slider_team').slick({
-  slidesToShow: 1,
-  dots: true,
-  arrows: true,
-  slidesToScroll: 1,
-});
-});
+// $(document).ready(function(){
+//  $('.slider_team').slick({
+//   slidesToShow: 1,
+//   dots: true,
+//   arrows: true,
+//   slidesToScroll: 1,
+// });
+// });
 
 
 //  YUOTUBE PLUGIN
