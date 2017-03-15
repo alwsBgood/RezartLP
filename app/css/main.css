@@ -3,7 +3,14 @@
 @import url(../libs/niftymodal/component.css);
 @import url(../libs/slick/slick.min.css);
 @import url(../css/calculator.css);
+@import url(../libs/lightbox2/lightbox.min.css);
 @import url(../fonts/font-awesome/font-awesome.min.css);
+.text--gold {
+  color: #b39c72; }
+
+.text--white {
+  color: #fff; }
+
 #sec_02 {
   padding: 95px 0 105px;
   background: url(../img/sec_02-bg.png) top center no-repeat; }
@@ -76,6 +83,92 @@
     /*         filter: contrast(0%);*/
     -webkit-filter: saturate(2.5);
     filter: saturate(2.5); }
+
+#sec_03_5 {
+  padding: 95px 0 80px;
+  background: #222 url(../img/sec_06-bg.png) top center no-repeat; }
+  #sec_03_5 h2 {
+    color: #fff;
+    margin-bottom: 20px; }
+  #sec_03_5 .margined_text {
+    margin-left: 80px;
+    font-size: 18px;
+    line-height: 24px; }
+  #sec_03_5 .sec_img {
+    margin-top: -15px;
+    margin-left: -15px; }
+  #sec_03_5 .img_block {
+    vertical-align: top;
+    position: relative;
+    margin-top: 16px;
+    width: 100%;
+    max-width: 520px;
+    display: inline-block; }
+  #sec_03_5 .img_block:before {
+    position: absolute;
+    content: '';
+    width: 100%;
+    height: 16px;
+    left: 0px;
+    top: -16px;
+    background: url(../img/sec_03_5-mac-block.png) center no-repeat; }
+  #sec_03_5 .img_block:after {
+    position: absolute;
+    content: '';
+    width: 0px;
+    height: 2px;
+    background: #b39c72;
+    left: 0px;
+    bottom: -2px;
+    -webkit-transition: all 0.8s;
+    transition: all 0.8s; }
+  #sec_03_5 .img_block:hover:after {
+    width: 100%; }
+  #sec_03_5 .text_block {
+    display: inline-block;
+    vertical-align: top;
+    margin-left: 35px;
+    max-width: 375px;
+    width: 40%; }
+  #sec_03_5 .cases_slider_numb {
+    max-width: 200px;
+    margin: 60px auto 15px;
+    text-align: center; }
+  #sec_03_5 .slide_number {
+    text-align: center;
+    width: 100%; }
+  #sec_03_5 .slick-dots {
+    top: -35px;
+    left: 50%;
+    width: 100%;
+    margin-left: -100px; }
+  #sec_03_5 .slick-next {
+    right: 50%;
+    margin-right: -40px;
+    top: 8px;
+    border-color: #666869; }
+  #sec_03_5 .slick-prev {
+    left: 50%;
+    margin-left: -40px;
+    top: 8px;
+    border-color: #666869; }
+  #sec_03_5 .cases_slider h3 {
+    margin-bottom: 22px;
+    margin-top: -4px;
+    letter-spacing: .05em; }
+  #sec_03_5 .cases_slider .title {
+    position: relative;
+    margin-bottom: 28px; }
+    #sec_03_5 .cases_slider .title:before {
+      position: absolute;
+      content: '';
+      width: 40px;
+      height: 5px;
+      left: 0px;
+      bottom: -10px;
+      background: url(../img/sec_03_5-undrl.png) center no-repeat; }
+  #sec_03_5 .cases_slider .text + .title {
+    margin-top: 22px; }
 
 #sec_04 {
   padding: 95px 0 80px;
@@ -279,7 +372,8 @@
     display: none; }
     #sec_06 .invisible_content .item_06 {
       width: 460px;
-      display: inline-block; }
+      display: inline-block;
+      vertical-align: top; }
     #sec_06 .invisible_content .item_06:nth-child(even) {
       margin-left: 15px; }
   #sec_06 .btn {
@@ -300,7 +394,7 @@
     color: #b39c72;
     font: 36px "Gilroy-Bold", Roboto, sans-serif;
     line-height: 28px;
-    top: 7;
+    top: 7px;
     left: 0; }
   #sec_07 div[class*='item_07'] .number:before {
     position: absolute;
@@ -352,6 +446,15 @@
       margin-bottom: 20px; }
     #sec_07 .item_07-5 .wrap {
       margin-left: 80px; }
+  #sec_07 .small_sertif {
+    margin-top: 105px; }
+  #sec_07 .big_sertif {
+    margin-top: -100px;
+    margin-bottom: 10px; }
+  #sec_07 .item_07-7 .wrap {
+    padding-top: 60px; }
+  #sec_07 .item_07-7 .title, #sec_07 .item_07-7 .text {
+    margin-left: 0 !important; }
 
 #sec_08 {
   padding: 90px 0;
@@ -605,7 +708,8 @@
       font: 18px "Gilroy-Bold", Roboto, sans-serif;
       margin: 20px 0 5px; }
     #sec_11 .card-big .description {
-      padding: 0 30px 20px 0; }
+      padding: 0 30px 20px 0;
+      font-size: 15px; }
   #sec_11 .card-big.active {
     opacity: 1;
     display: block; }
@@ -634,6 +738,15 @@
     z-index: -1;
     color: #ebeef0;
     font: 200px/24px "Gilroy-Bold", Roboto, sans-serif; }
+  #sec_11 .slick-dots {
+    top: 80px;
+    left: 55px; }
+  #sec_11 .slick-next {
+    left: 90px;
+    top: 120px; }
+  #sec_11 .slick-prev {
+    left: 50px;
+    top: 120px; }
 
 #sec_12 {
   padding: 90px 0;
@@ -879,38 +992,34 @@ div[id*="modal_politics"] {
     padding-top: 50px; }
 
 div[id*="modal_callback"], #modal_request, #modal_calculator {
-  max-width: 500px; }
-  div[id*="modal_callback"] h2:before, #modal_request h2:before, #modal_calculator h2:before {
-    display: none; }
+  max-width: 500px;
+  max-height: 98vh;
+  overflow-y: scroll; }
   div[id*="modal_callback"] h2, #modal_request h2, #modal_calculator h2 {
-    /* color:  black;*/
-    font-size: 30px;
-    font-weight: 700; }
+    font-size: 29px;
+    line-height: 36px;
+    margin: 30px 30px 0px; }
+  div[id*="modal_callback"] .h2_desc, #modal_request .h2_desc, #modal_calculator .h2_desc {
+    margin-bottom: 25px; }
   div[id*="modal_callback"] .md-content, #modal_request .md-content, #modal_calculator .md-content {
+    padding: 20px;
     background: #fff;
     background-size: cover;
     text-align: center; }
-  div[id*="modal_callback"] .btn, #modal_request .btn, #modal_calculator .btn {
-    position: relative;
-    margin: 0 auto;
-    margin-top: 10px;
-    padding: 0;
-    line-height: 47px; }
-  div[id*="modal_callback"] .md_bottom p, #modal_request .md_bottom p, #modal_calculator .md_bottom p {
-    opacity: 0.7;
-    text-align: center; }
-  div[id*="modal_callback"] h4, #modal_request h4, #modal_calculator h4 {
-    display: inline-block;
-    letter-spacing: 0;
-    color: #000;
-    font-size: 26px;
-    text-transform: uppercase;
-    padding-bottom: 20px;
-    text-align: center; }
   div[id*="modal_callback"] .form-wrap, #modal_request .form-wrap, #modal_calculator .form-wrap {
     display: block; }
+  div[id*="modal_callback"] .field, #modal_request .field, #modal_calculator .field {
+    max-width: 360px;
+    width: 100%;
+    margin: 0 auto; }
+    div[id*="modal_callback"] .field input, #modal_request .field input, #modal_calculator .field input {
+      width: 100%; }
   div[id*="modal_callback"] .field + .field, #modal_request .field + .field, #modal_calculator .field + .field {
-    margin-top: 10px; }
+    margin-top: 15px; }
+  div[id*="modal_callback"] .btn, #modal_request .btn, #modal_calculator .btn {
+    margin: 25px auto 30px;
+    max-width: 300px;
+    width: 100%; }
 
 .field {
   position: relative;
@@ -1137,7 +1246,6 @@ div[id*="modal_callback"], #modal_request, #modal_calculator {
   width: 8px; }
 
 .slick-next {
-  left: 90px;
   z-index: 10;
   border-right: 2px solid #28292d;
   border-top: 2px solid #28292d;
@@ -1145,7 +1253,6 @@ div[id*="modal_callback"], #modal_request, #modal_calculator {
   transition: all 0.8s; }
 
 .slick-prev {
-  left: 50px;
   z-index: 10;
   border-left: 2px solid #28292d;
   border-bottom: 2px solid #28292d;
@@ -1158,7 +1265,7 @@ div[id*="modal_callback"], #modal_request, #modal_calculator {
   display: block;
   width: 10px;
   height: 14px;
-  top: 120px;
+  top: -20px;
   -webkit-transform: rotate(45deg);
   -ms-transform: rotate(45deg);
   transform: rotate(45deg); }
@@ -1176,7 +1283,7 @@ div[id*="modal_callback"], #modal_request, #modal_calculator {
 
 .field {
   position: relative;
-  display: block; }
+  display: inline-block; }
   .field input {
     padding: 25px 0;
     width: 100%;

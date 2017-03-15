@@ -25,43 +25,38 @@ div[id*="modal_politics"]{
 
 div[id*="modal_callback"],#modal_request, #modal_calculator {
   max-width: 500px;
-  h2:before{display:none}
-
+  max-height: 98vh;
+  overflow-y: scroll;
   h2{
-    /* color:  black;*/
-    font-size: 30px;
-    font-weight: 700;
+    font-size: 29px;
+    line-height: 36px;
+    margin: 30px 30px 0px;
   }
+  .h2_desc{margin-bottom: 25px;}
   .md-content{
+    padding: 20px;
     background: #fff;
     background-size: cover;
-    text-align: center;
-  }
-  .btn{
-    position: relative;
-    margin: 0 auto;
-    margin-top: 10px;
-    padding: 0;
-    line-height: 47px;
-  }
-  .md_bottom p{
-    opacity: 0.7;
-    text-align: center;
-  }
-  h4{
-    display: inline-block;
-    letter-spacing: 0;
-    color: #000;
-    font-size: 26px;
-    text-transform: uppercase;
-    padding-bottom: 20px;
     text-align: center;
   }
   .form-wrap {
     display: block;
   }
+  .field{
+    max-width: 360px;
+    width: 100%;
+    margin: 0 auto;
+    input{
+      width: 100%;
+    }
+  }
   .field+.field {
-   margin-top: 10px
+   margin-top: 15px
+  }
+  .btn{
+    margin: 25px auto 30px;
+    max-width: 300px;
+    width: 100%;
   }
 }
 
@@ -273,41 +268,39 @@ div[id*="modal_callback"],#modal_request, #modal_calculator {
 }
 
 
-  .slick-dots {
-      position: absolute;
-      top: 80px;
-      left: 55px;
-      display: inline-block;
-      text-align: center;
-  }
+.slick-dots {
+    position: absolute;
+    top: 80px;
+    left: 55px;
+    display: inline-block;
+    text-align: center;
+}
 
-   .slick-dots li {
-      display: inline-block;
-      height: 4px;
-      width: 4px;
-      margin: 0 5px;
-      padding: 0;
-      cursor: pointer;
-  }
-   .slick-dots li.slick-active button { background: $gray; }
+ .slick-dots li {
+    display: inline-block;
+    height: 4px;
+    width: 4px;
+    margin: 0 5px;
+    padding: 0;
+    cursor: pointer;
+}
+ .slick-dots li.slick-active button { background: $gray; }
 
-   .slick-dots li button {
-      background-color: #ebeef0;
-     border-radius: 50%;
-      color: transparent;
-      cursor: pointer;
-      display: block;
-      font-size: 0;
-      height: 8px;
-      line-height: 0;
-      outline: medium none;
-      padding: 2px;
-      width: 8px;
-  }
-
+ .slick-dots li button {
+    background-color: #ebeef0;
+    border-radius: 50%;
+    color: transparent;
+    cursor: pointer;
+    display: block;
+    font-size: 0;
+    height: 8px;
+    line-height: 0;
+    outline: medium none;
+    padding: 2px;
+    width: 8px;
+}
 
 .slick-next{
-      left: 90px;
       z-index: 10;
       border-right: 2px solid $black;
       border-top: 2px solid $black;
@@ -315,7 +308,6 @@ div[id*="modal_callback"],#modal_request, #modal_calculator {
       transition: all 0.8s;
     }
   .slick-prev{
-      left: 50px;
       z-index: 10;
       border-left: 2px solid $black;
       border-bottom: 2px solid $black;
@@ -328,7 +320,7 @@ div[id*="modal_callback"],#modal_request, #modal_calculator {
     display: block;
     width: 10px;
     height: 14px;
-    top: 120px;
+    top: -20px;
     -webkit-transform: rotate(45deg);
             transform: rotate(45deg);
   }
@@ -347,7 +339,7 @@ div[id*="modal_callback"],#modal_request, #modal_calculator {
 
 .field{
   position: relative;
-  display: block;
+  display: inline-block;
   input{
     padding: 25px 0;
     width: 100%;

@@ -46,6 +46,7 @@ gulp.task('scripts', function() {
     './app/libs/animateNumber/animateNumber.js',
     './app/libs/waypoints/waypoints.min.js',
     './app/libs/masked/mask.js',
+    './app/libs/lightbox2/lightbox.min.js',
 		'./app/libs/plugins-scroll/plugins-scroll.js',
     './app/libs/slick/slick.min.js'
 		])
