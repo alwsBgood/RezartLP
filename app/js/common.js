@@ -466,6 +466,27 @@ $(document).ready(function(){
   });
 });
 
+$(document).ready(function(){
+ $('.small_sertif').slick({
+    slidesToShow: 1,
+    dots: true,
+    arrows: true,
+    fade: true,
+    slidesToScroll: 1,
+    asNavFor: '.big_sertif'
+  });
+});
+
+$(document).ready(function(){
+ $('.big_sertif').slick({
+    slidesToShow: 1,
+    dots: false,
+    arrows: false,
+    slidesToScroll: 1,
+    asNavFor: '.small_sertif'
+  });
+});
+
 
 //  YUOTUBE PLUGIN
 

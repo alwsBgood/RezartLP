@@ -1,8 +1,6 @@
 @import "bourbon";
 @import "vars.scss";
 
-
-
 *{box-sizing: border-box;}
 
 html, body {
@@ -16,6 +14,7 @@ body.unscroll{
     overflow: hidden;
 }
 
+.mobile{display: none}
 
 .container_12 {
     max-width: 960px;
@@ -205,7 +204,7 @@ input:invalid{
   z-index: 1;
   display: inline-block;
   max-width: 350px;
-  width: 340px;
+  width: 100%;
   height: 60px;
   vertical-align: top;
 }
@@ -420,7 +419,8 @@ input:-ms-input-placeholder{
 
 
 .btn{
-  width: 340px;
+  max-width: 340px;
+  width: 100%;
   height: 50px;
   background-color: #28292d;
   border-radius: 2px;
@@ -490,4 +490,23 @@ input:-ms-input-placeholder{
 .line{
   height: 2px;
   background: $black;
+}
+
+@media (min-width: 761px) and (max-width: 980px){
+  #sec_01{
+    background-image: url(../img/sec_01-bg-761.jpg);
+    .main_block{
+      margin-top: 80px;
+    }
+    h1{
+      font-size: 80px;
+      line-height: 90px; 
+    }
+    .afterheader span {
+      display: block;
+    }
+    .btndwn{
+      margin-top: 80px;
+    }
+  }
 }
