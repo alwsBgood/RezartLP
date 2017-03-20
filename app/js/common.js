@@ -436,14 +436,14 @@ $(document).ready(function(){
 });
 
 
-$(document).ready(function(){
- $('.slider_team').slick({
-  slidesToShow: 1,
-  dots: true,
-  arrows: true,
-  slidesToScroll: 1,
-});
-});
+// $(document).ready(function(){
+//  $('.slider_team').slick({
+//   slidesToShow: 1,
+//   dots: true,
+//   arrows: true,
+//   slidesToScroll: 1,
+// });
+// });
 
 $(document).ready(function(){
  $('.cases_slider').slick({
@@ -524,6 +524,8 @@ $('.card').click(function(){
         $('.slick-next, .slick-prev').css('z-index', '10');
     }
 })
+
+
 
 
 // $('body').each(function() {

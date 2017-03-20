@@ -894,9 +894,9 @@
     position: absolute;
     display: none;
     z-index: 13;
-    width: 420px;
+    width: 456px;
     height: 180px;
-    margin-left: -210px;
+    margin-left: -228px;
     left: 50%;
     margin-top: -90px;
     top: 50%;
@@ -944,8 +944,10 @@
   .signature:before{
     position: absolute;
     content: '’’';
-    right: -60px;
-    bottom: -20px;
+    right: 60px;
+    bottom: -40px;
+    width: 100px;
+    height: 50px;
     z-index: -1;
     color: #ebeef0;
     font: 200px/24px $bold_font;
@@ -1058,6 +1060,7 @@
       fill: #fff;
     }
   }
+  a{color: #fff;}
   .grid_3{
     color: #fff;
     i{
