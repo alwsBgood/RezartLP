@@ -4,10 +4,10 @@
 $db_user = "root"; // Логин БД
 $db_password = "z"; // Пароль БД
 $database = "allinsol_reg"; // БД*/
- $db_host = "qagirl.mysql.ukraine.com.ua";
-$db_user = "qagirl_db"; // Логин БД
-$db_password = "CS3H7lta"; // Пароль БД
-$database = "qagirl_db"; // БД
+ $db_host = "womenc00.mysql.ukraine.com.ua";
+$db_user = "womenc00_ra"; // Логин БД
+$db_password = "lps8ba6t"; // Пароль БД
+$database = "womenc00_ra"; // БД
 
 // Подключение к базе данных
 $db = mysql_connect($db_host,$db_user,$db_password) or die("Не могу создать соединение ");
@@ -56,9 +56,10 @@ function GetClearPhoneNumber($number) {
   $number = str_replace('+', '', $number);
   return $number;
 }
-$name = getVar('name');
-$phone = getVar('custom_tel');
-$email = getVar('email');
+
+  $name = getVar('entry_1336947051');
+  $phone = getVar('entry_432827972');
+  $email = getVar('entry_1605749108');
 
 // if (empty($name) && empty($phone) && empty($email)) {
 //   $name = getVar('name');
@@ -74,7 +75,6 @@ $data = array(
   'name' => $name,
   'phone'     => GetClearPhoneNumber($phone),
   'email'     => $email,
-  'registrationType' => getVar('registrationType'),
   'orderType' => getVar('orderType'),
   'date_visited' => date("d.m.Y"),
   'time_visited' => date("G:i:s"),
@@ -98,27 +98,6 @@ $data = array(
 
 // var_dump($data);die;
 
-$order_type_id = null;
-if ($data['orderType'] == 'order-add') {
-  $order_type_id = '';
-}
-switch ($data['registrationType']) {
-    case 'default_registration':
-        $registration_type_id = '';
-        break;
-    case 'standart':
-        $registration_type_id = '';
-        break;
-    case 'super':
-        $registration_type_id = '';
-        break;
-    case 'special':
-        $registration_type_id = "";
-        break;
-    default:
-        throw new \RuntimeException('Undefined Registration Type. Add class default_registration for default');
-        break;
-}
 
 $fullName = explode(' ', $data['name'], 2);
 
@@ -130,7 +109,6 @@ if (empty($data['confirmation_phone'])) {
                       `last_name`,
                       `email`,
                       `phone`,
-                      `registrationType`,
                       `orderType`,
                       `registration_type_id`,
                       `order_type_id`,
@@ -157,7 +135,6 @@ if (empty($data['confirmation_phone'])) {
                     '".(empty($fullName[1]) ? '-' : $fullName[1])."',
                     '".$data['email']."',
                     '".$data['phone']."',
-                    '".$data['registrationType']."',
                     '".$data['orderType']."',
                     '".$registration_type_id."',
                     '".$order_type_id."',

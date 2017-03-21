@@ -23,7 +23,6 @@ CREATE TABLE IF NOT EXISTS `leads` (
   `last_name` char(255) NOT NULL,
   `email` varchar(255) NOT NULL,
   `phone` varchar(20) NOT NULL,
-  `registrationType` varchar(255) NOT NULL,
   `orderType` varchar(255) NOT NULL,
   `registration_type_id` varchar(255) NOT NULL,
   `order_type_id` varchar(255) NOT NULL,
@@ -46,7 +45,7 @@ CREATE TABLE IF NOT EXISTS `leads` (
   `affiliate_id` varchar(255) NOT NULL,
   `click_id` varchar(255) NOT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=667 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=1 ;
 
 --
 -- Дамп данных таблицы `leads`

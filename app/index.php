@@ -1,3 +1,8 @@
+<?php
+    require 'db/data.php';
+    require 'db/visits.php';
+?>
+
 <!DOCTYPE html>
 
 <html lang="ru">
@@ -8,7 +13,7 @@
 
     <title>Rezart Agency</title>
     <meta name="description" content=" От идеи до реальных продаж всего за 1 месяц. Создание личных сайтов/блогов, корпоративных сайтов, landing page, построение воронки продаж, аналитика, продающий копирайтинг.">
-    <meta name="keywords" content="лендинг, landing page, сайт, блог, воронка продаж, клиенты с интернет, genius studio, студия интернет маркетинга, аналитика, продающий копирайтинг">
+    <meta name="keywords" content="лендинг, landing page, сайт, блог, воронка продаж, клиенты с интернет, Rezart, студия интернет маркетинга, аналитика, продающий копирайтинг">
 
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1" />
@@ -77,12 +82,14 @@
                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 792"><path d="M216.8 247.3c150.2 0 147.2 0 156.1 0 50.4 0 100.2 42.1 100.4 102.3 0.1 56.2-43.8 91.1-72.4 98 0.9 0 38.4 66.8 38.4 66.8l172.2-291.2 179.5 305.3c5.4 9.9 8.8 15.6 11.3 22.7 5.3 15.3-8.8 25.6-18.7 25.7 -9.7 0.1-14.6-3.6-24.4-8.9l-108.1-62 -39.9-74.4 108.4 63L610.6 310.8c0 0-139.3 237.5-144 244.6 -8.1 12.1-13.4 21.6-28.4 21.6 -14.6 0-21.4-9.6-29-21.3 -1.7-3.4-89.8-148.9-89.8-148.9 32.1 0.1 28.9 0.1 54.8 0.1 21.1 0 54-18.6 54-55.7 0-22.2-17.1-56.4-57.9-56.4 -45.2 0-126.3 0-126.3 0L216.8 247.3z"/><path d="M217.1 351l47.7 83.4 -0.3 119.8c0 0 0.5 22.5-24.2 22.9 -0.3-0.3-23.7 1.8-23.7-22.2C216.7 530.8 217.1 351 217.1 351z"/><path d="M264.9 434.4l-0.1 119c0 0 0.4 23.3-24.3 23.7"/></svg>
                 </div>
                 <a class="md-trigger flex btn_callback" data-modal="modal_callback">Мы перезвоним</a>
+                <a class="md-trigger flex btn_callback_mobile" data-modal="modal_callback"><i class="fa fa-phone" aria-hidden="true"></i></a>
+
                 <div class="clear"></div>
             </div>
             <div class="main_block">
                 <p class="beforeheader">Ukrainian Digital Marketing Agency</p>
                 <h1>Rezart Agency</h1>
-                <p class="afterheader" style="margin-bottom: 50px;">консалтинговое агентство с погружением в бизнес</p>
+                <p class="afterheader">консалтинговое агентство <span>с погружением в бизнес</span></p>
                 <a href="#sec_02" class="btn_more flex scroll">УЗНАТЬ БОЛЬШЕ</a>
             </div>
             <a href="#sec_02" class="scroll flex btndwn"><img src="img/ar1.png" alt="Arrow"></a>
@@ -125,15 +132,34 @@
             <div class="block_form">
                 <form method="POST" class="form-inline" action="javascript:void(null);">
                 <!-- Hidden Required Fields -->
-                <input type="hidden" name="project_name" value="Genius Studio">
-                <input type="hidden" name="admin_email" value="project@rezart.com.ua">
-                <input type="hidden" name="form_subject" value="Горячая заявка">
+                <input type="hidden" name="project_name" value="Rezart">
+                <input type="hidden" name="admin_email" value="project@rezart.agency">
+                <input type="hidden" name="form_subject" value="Rezart Checklist">
                 <!-- END Hidden Required Fields -->
+
+
+                <input type="hidden" name="orderType" value="Checklist">
+                <input type="hidden" name="page_url" value="<?php echo $data['page_url']; ?>">
+                <input type="hidden" name="user_agent" value="<?php echo $user_agent; ?>">
+                <input type="hidden" name="utm_source" value="<?php echo $data['utm_source']; ?>">
+                <input type="hidden" name="utm_campaign" value="<?php echo $data['utm_campaign']; ?>">
+                <input type="hidden" name="utm_medium" value="<?php echo $data['utm_medium']; ?>">
+                <input type="hidden" name="utm_term" value="<?php echo $data['utm_term']; ?>">
+                <input type="hidden" name="utm_content" value="<?php echo $data['utm_content']; ?>">
+                <input type="hidden" name="ref" value="<?php echo $data['ref']; ?>">
+                <input type="hidden" name="ip_address" value="<?php echo $data['ip_address']; ?>">
+                <input type="hidden" name="city" value="">
+                <input type="hidden" name="client_id" value="<?php echo $data['client_id']; ?>">
+                <input type="hidden" name="utmcsr" value="<?php echo $data['utmcsr']; ?>">
+                <input type="hidden" name="utmccn" value="<?php echo $data['utmccn']; ?>">
+                <input type="hidden" name="utmcmd" value="<?php echo $data['utmcmd']; ?>">
+                <input type="hidden" name="click_id" value="<?php echo $data['click_id']; ?>">
+                <input type="hidden" name="affiliate_id" value="<?php echo $data['affiliate_id']; ?>">
 
 
 
                 <span class="input field">
-                    <input id="name_02" required="" class="form-control name input__field " type="text" name="name" />
+                    <input id="name_02" required="" class="form-control name input__field " type="text" name="entry.1336947051" />
                     <label class="input__label" for="name_02">
                         <span class="input__label-content">Ваше имя</span>
                     </label>
@@ -141,7 +167,7 @@
 
 
                 <span class="input field">
-                    <input id="tel_02" required="" class="form-control name input__field" type="tel" name="custom_telephone"  />
+                    <input id="tel_02" required="" class="form-control name input__field" type="tel" name="entry.432827972"  />
                     <label class="input__label" for="tel_02">
                         <span class="input__label-content">Ваш телефон</span>
                     </label>
@@ -149,7 +175,7 @@
 
 
                 <span class="input field">
-                    <input id="mail_02" required="" class="form-control name input__field" type="email" name="email" />
+                    <input id="mail_02" required="" class="form-control name input__field" type="email" name="entry.1605749108" />
                     <label class="input__label" for="mail_02">
                         <span class="input__label-content">Ваш e-mail</span>
                     </label>
@@ -157,17 +183,6 @@
 
                     <button type="submit" class="btn" name="send">Получить Доступ</button>
 
-
-
-                <!-- Просто любое дополнительное поле -->
-                <input type="hidden" name="other_data" value="Любое значение" />
-                <!-- Динамическое дополнительное поле для передачи данных с кнопок по всему сайту -->
-                <input type="hidden" class="pacet" name="form_pacet" value="">
-                <!-- GET RESPONCE INPUTS -->
-                <input type="hidden" name="start_day" value="0"/>
-                <!-- Если нужно отправлять и на почту и на GetResponse - указываем campaign_token -->
-                <input type="hidden" name="campaign_token" value=""/>
-                <!-- GET RESPONCE INPUTS -->
                 <div class="clear"></div>
 
 
@@ -184,25 +199,164 @@
         <div class="grid_5">
             <h3>Они уже доверили <br /> свои проекты <br /> Rezart Agency</h3>
         </div>
-        <div class="grid_7">
-            <div class="wrap">
+        <div class="grid_7 desctop">
+            <div class="wrap line_1">
                 <img src="img/companies/1.png" alt="Companie">
                 <img src="img/companies/2.png" alt="Companie">
                 <img src="img/companies/3.png" alt="Companie">
                 <img src="img/companies/4.png" alt="Companie">
             </div>
-            <div class="wrap">
+            <div class="wrap line_2">
                 <img src="img/companies/5.png" alt="Companie">
                 <img src="img/companies/6.png" alt="Companie">
                 <img src="img/companies/7.png" alt="Companie">
                 <img src="img/companies/8.png" alt="Companie">
                 <img src="img/companies/9.png" alt="Companie">
             </div>
-            <div class="wrap">
+            <div class="wrap line_3">
                 <img src="img/companies/10.png" alt="Companie">
                 <img src="img/companies/11.png" alt="Companie">
                 <img src="img/companies/12.png" alt="Companie">
                 <img src="img/companies/13.png" alt="Companie">
+            </div>
+        </div>
+        <div class="grid_7 mobile">
+                <img src="img/companies/1.png" alt="Companie">
+                <img src="img/companies/2.png" alt="Companie">
+                <img src="img/companies/3.png" alt="Companie">
+                <img src="img/companies/4.png" alt="Companie">
+                <img src="img/companies/5.png" alt="Companie">
+                <img src="img/companies/6.png" alt="Companie">
+                <img src="img/companies/7.png" alt="Companie">
+                <img src="img/companies/8.png" alt="Companie">
+                <img src="img/companies/9.png" alt="Companie">
+                <img src="img/companies/10.png" alt="Companie">
+                <img src="img/companies/11.png" alt="Companie">
+                <img src="img/companies/12.png" alt="Companie">
+                <img src="img/companies/13.png" alt="Companie">
+        </div>
+    </div>
+</section>
+
+<!--============================SECTION================================-->
+
+<section id="sec_03_5">
+    <div class="container_12">
+        <div class="grid_6">
+            <h2>Результаты, <br /> вызывающие <br /> гордость</h2>
+            <p class="text margined_text">В такие моменты хочется перевернуть <br />интернет-индустрию и оставить в сети только достойные ресурсы. <br />Не те, которые создавались “за ночь” <br />с целью быстро заработать денег. <br />А настоящие шедевры, в которых <br />есть душа, за которыми стоит лидер <br />и сильный продукт!</p>
+        </div>
+        <div class="grid_6">
+            <img src="img/sec_03_5-img-1.png" alt="Image" class="sec_img">
+        </div>
+        <div class="grid_12">
+            <div class="cases_slider_numb">
+                <div class="slide">
+                    <p class="slide_number"><span class="current_slide text--gold title">1</span>/4</p>
+                </div>
+                <div class="slide">
+                    <p class="slide_number"><span class="current_slide text--gold title">2</span>/4</p>
+                </div>
+                <div class="slide">
+                    <p class="slide_number"><span class="current_slide text--gold title">3</span>/4</p>
+                </div>
+                <div class="slide">
+                    <p class="slide_number"><span class="current_slide text--gold title">4</span>/4</p>
+                </div>
+            </div>
+            <div class="cases_slider">
+                <div class="slide">
+                    <div class="img_block">
+                        <img src="img/sec_03-site-1.png" alt="Design">
+                    </div>
+                    <div class="text_block">
+                        <h3 class="text--white">18 сортов КОФЕ <br /> НА КАЖДЫЙ ДЕНЬ</h3>
+                        <div class="item">
+                            <p class="title text--gold">Задача</p>
+                            <p class="text ">Разработать продающую страницу. Создать мощный поток клиентов на лендинг. Выйти на реализацию большого объема кофе. </p>
+                        </div>
+                        <div class="item">
+                            <p class="title text--gold">Результат</p>
+                            <ul class="">
+                                <li>Конверсия - 6%</li>
+                                <li>24 заявки за 9 дней</li>
+                                <li>Цена клика - 3,2 грн</li>
+                                <li>Потрачено - 812 грн</li>
+                                <li class="text--white">Чистая прибыль - 1 120 грн</li>
+                                <li>ROI - 136%</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="slide">
+                    <div class="img_block">
+                        <img src="img/sec_03-site-2.png" alt="Design">
+                    </div>
+                    <div class="text_block">
+                        <h3 class="text--white">Доставка здорового <br /> питания EatFirst</h3>
+                        <div class="item">
+                            <p class="title text--gold">Задача</p>
+                            <p class="text ">Создать индивидуальный узнаваемый стиль, <br /> повысить продаваемость товара, подчеркнуть достоинства компании.</p>
+                        </div>
+                        <div class="item">
+                            <p class="title text--gold">Результат</p>
+                            <ul class="">
+                                <li>Конверсия 4%.</li>
+                                <li>24 заявки за 10 дней. цена клика 2,5 грн</li>
+                                <li>Потрачено около 3000 грн.</li>
+                                <li>Чистая прибыль около 7200 грн</li>
+                                <li>Корпоративные заказы на год.</li>
+                                <li class="text--white">Прибыль более 45 тысяч.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="slide">
+                    <div class="img_block">
+                        <img src="img/sec_03-site-3.png" alt="Design">
+                    </div>
+                    <div class="text_block">
+                        <h3 class="text--white">Школа монтажа <br /> Procut.</h3>
+                        <div class="item">
+                            <p class="title text--gold">Задача</p>
+                            <p class="text ">Сделать креативный дизайн но сохранить <br /> ощущение простоты и легкости. Страница должна хорошо конвертировать.</p>
+                        </div>
+                        <div class="item">
+                            <p class="title text--gold">Результат</p>
+                            <ul class="">
+                                <li>Конверсия 6%</li>
+                                <li>39 заявок за 10 дней. цена клика 0,15 $</li>
+                                <li>Потрачено на рекламу 90 $</li>
+                                <li class="text--white">Чистая прибыль 488$</li>
+                                <li>ROI 500%</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="slide">
+                    <div class="img_block">
+                        <img src="img/sec_03-site-4.png" alt="Design">
+                    </div>
+                    <div class="text_block">
+                        <h3 class="text--white">Оздоровительный <br /> комплекс «Водолей»</h3>
+                        <div class="item">
+                            <p class="title text--gold">Задача</p>
+                            <p class="text ">Создать индивидуальный узнаваемый стиль, <br /> повысить продаваемость товара, подчеркнуть достоинства компании.</p>
+                        </div>
+                        <div class="item">
+                            <p class="title text--gold">Результат</p>
+                            <ul class="">
+                                <li>Конверсия 3,9 %</li>
+                                <li>CTR 11,52 %</li>
+                                <li>Заявок в день до 10</li>
+                                <li>Цена заявки 53 грн</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
@@ -212,55 +366,55 @@
 
 <section id="sec_04">
     <div class="container_12">
-<div class="row clearfix">
-    <div class="grid_7">
-        <h2>От чего <br />зависит успех <br />Вашего проекта</h2>
-        <p class="explanation">Честно? От тех, кто будет его создавать. <br />Вектор команды обязательно должен быть <br />направлен на Ваш результат.</p>
-    </div>
-    <div class="grid_5 pos">
-        <img src="img/sec_04-img-1.png" alt="Photo">
-    </div>
-</div>
-<div class="row clearfix">
-    <div class="grid_6">
-        <img src="img/sec_04-img-2.png" alt="Photo">
-    </div>
-    <div class="grid_6">
-        <div class="item_4">
-            <p class="number">7 <span><img src="img/slash.png" alt="Slash"></span></p>
-            <img src="img/sec_04-brrd.png" alt="Separator">
-            <h3>персональных <br />стратегий студии <br />для успешного <br />запуска Вашего <br />проекта:</h3>
+        <div class="row clearfix">
+            <div class="grid_7">
+                <h2>От чего <br />зависит успех <br />Вашего проекта</h2>
+                <p class="explanation">Честно? От тех, кто будет его создавать. <br />Вектор команды обязательно должен быть <br />направлен на Ваш результат.</p>
+            </div>
+            <div class="grid_5 pos">
+                <img class="sec_img-1" src="img/sec_04-img-1.png" alt="Photo">
+            </div>
         </div>
-    </div>
-</div>
-<div class="wrap clearfix">
-    <div class="grid_4">
-        <div class="item_04-1">
-            <p class="number_small">01.</p>
-            <p class="title">Цель любого действия - результат клиента</p>
-            <p class="text">Внедрить новые сервисы? <br />Изучить нишу или адаптировать <br />воронку продаж? Выйти на связь <br />в нерабочее время? Легко, если <br />это необходимо для высокого <br />результата проекта!</p>
-            <img src="img/sec_04-img-3.png" alt="Photo">
+        <div class="row clearfix">
+            <div class="grid_6">
+                <img class="sec_img-2" src="img/sec_04-img-2.png" alt="Photo">
+            </div>
+            <div class="grid_6">
+                <div class="item_4">
+                    <p class="number">7 <span><img src="img/slash.png" alt="Slash"></span></p>
+                    <img src="img/sec_04-brrd.png" alt="Separator">
+                    <h3>персональных <br />стратегий студии <br />для успешного <br />запуска Вашего <br />проекта:</h3>
+                </div>
+            </div>
         </div>
-    </div>
-    <div class="grid_4">
-        <div class="item_04-2 tc">
-            <div class="line line_03"></div>
-            <p class="number_small">02.</p>
-            <p class="title">Система оценки <br />уровня и рейтинга <br />специалистов <br />команды</p>
-            <img src="img/sec_04-gray-brrd.png" alt="Separator">
-            <p class="text">Почему каждый, кто будет работать над Вашим проектом, будет <br />стремиться к высокому результату? Потому что от успеха проекта <br />напрямую зависит уровень <br />и мотивация каждого <br />специалиста команды.</p>
-            <div class="line line_04"></div>
+        <div class="wrap clearfix">
+            <div class="grid_4">
+                <div class="item_04-1">
+                    <p class="number_small">01.</p>
+                    <p class="title">Цель любого действия - результат клиента</p>
+                    <p class="text">Внедрить новые сервисы? <br />Изучить нишу или адаптировать <br />воронку продаж? Выйти на связь <br />в нерабочее время? Легко, если <br />это необходимо для высокого <br />результата проекта!</p>
+                    <img class="sec_img-3" src="img/sec_04-img-3.png" alt="Photo">
+                </div>
+            </div>
+            <div class="grid_4">
+                <div class="item_04-2 tc">
+                    <div class="line line_03"></div>
+                    <p class="number_small">02.</p>
+                    <p class="title">Система оценки <br />уровня и рейтинга <br />специалистов <br />команды</p>
+                    <img src="img/sec_04-gray-brrd.png" alt="Separator">
+                    <p class="text">Почему каждый, кто будет работать над Вашим проектом, будет <br />стремиться к высокому результату? Потому что от успеха проекта <br />напрямую зависит уровень <br />и мотивация каждого <br />специалиста команды.</p>
+                    <div class="line line_04"></div>
+                </div>
+            </div>
+            <div class="grid_4">
+                <div class="item_04-3">
+                    <p class="number_small">03.</p>
+                    <p class="title">Практический опыт <br />западных экспертов</p>
+                    <p class="text">Все стратегии, которые <br />используют маркетинговые <br>гении США, успешно внедряются <br>в реализуемых проектах.</p>
+                    <img class="sec_img-4" src="img/sec_04-img-4.png" alt="Photo">
+                </div>
+            </div>
         </div>
-    </div>
-    <div class="grid_4">
-        <div class="item_04-3">
-            <p class="number_small">03.</p>
-            <p class="title">Практический опыт <br />западных экспертов</p>
-            <p class="text">Все стратегии, которые <br />используют маркетинговые <br>гении США, успешно внедряются <br>в реализуемых проектах.</p>
-            <img src="img/sec_04-img-4.png" alt="Photo">
-        </div>
-    </div>
-</div>
         <div class="wrap clearfix">
             <div class="grid_4">
                 <div class="item_04-4">
@@ -293,7 +447,7 @@
         </div>
         <div class="grid_4">
             <div class="item_04-8">
-                <img src="img/sec_04-img-5.png" alt="Photo">
+                <img class="sec_img-5" src="img/sec_04-img-5.png" alt="Photo">
             </div>
         </div>
         <div class="grid_4">
@@ -318,7 +472,7 @@
         <img class="figure-4" src="img/float-elem-square.png" alt="Figure">
         <img class="figure-5" src="img/float-elem-triangle.png" alt="Figure">
         <img class="figure-6" src="img/float-elem-circle.png" alt="Figure">
-            <p>За <span>2,5 года</span> существования студия успешно <br />запустила<span> 948 проектов</span> интернет-предпринимателей, <br />достигающих <span>конверсии 24%</span> с холодного трафика.</p>
+            <p>За <span>3 года</span> существования студия успешно <br />запустила<span> 948 проектов</span> интернет-предпринимателей, <br />достигающих <span>конверсии 24%</span> с холодного трафика.</p>
         </div>
     </div>
 </section>
@@ -334,11 +488,11 @@
 
             <div class="grid_6">
                 <div class="item_06">
-                    <img src="img/sec_06-placeholder.png" alt="Design">
-                    <a class="md-trigger site" data-modal="modal_maket">Site name</a>
-                    <p class="title">Название</p>
-                    <p class="text">Разработка адаптивного сайта <br /> для такой-то фирмы.</p>
-                    <p class="money">Доход с сайта: $ 5 000/год</p>
+                    <img src="img/sec_06-site-1.png" alt="Design">
+                    <!-- <a class="md-trigger site" data-modal="modal_maket">Site name</a> -->
+                    <p class="title">Qa for Girl</p>
+                    <p class="text">Онлайн курс QA для девушек</p>
+                    <!-- <p class="money">Доход с сайта: $ 5 000/год</p> -->
                     <a class="md-trigger info" data-modal="modal_info">
                         <img src="img/sec_06-more_icon.png" alt="">
                     </a>
@@ -349,11 +503,11 @@
             </div>
             <div class="grid_6">
                 <div class="item_06">
-                    <img src="img/sec_06-placeholder.png" alt="Design">
-                    <a class="md-trigger site" data-modal="modal_maket">Site name</a>
-                    <p class="title">Название</p>
-                    <p class="text">Разработка адаптивного сайта <br /> для такой-то фирмы.</p>
-                    <p class="money">Доход с сайта: $ 5 000/год</p>
+                    <img src="img/sec_06-site-2.png" alt="Design">
+                    <!-- <a class="md-trigger site" data-modal="modal_maket">Site name</a> -->
+                    <p class="title">Java Developer</p>
+                    <p class="text">Онлайн курс Java</p>
+                    <!-- <p class="money">Доход с сайта: $ 5 000/год</p> -->
                     <a class="md-trigger info" data-modal="modal_info">
                         <img src="img/sec_06-more_icon.png" alt="">
                     </a>
@@ -364,11 +518,11 @@
             </div>
             <div class="grid_6">
                 <div class="item_06">
-                    <img src="img/sec_06-placeholder.png" alt="Design">
-                    <a class="md-trigger site" data-modal="modal_maket">Site name</a>
-                    <p class="title">Название</p>
-                    <p class="text">Разработка адаптивного сайта <br /> для такой-то фирмы.</p>
-                    <p class="money">Доход с сайта: $ 5 000/год</p>
+                    <img src="img/sec_06-site-3.png" alt="Design">
+                    <!-- <a class="md-trigger site" data-modal="modal_maket">Site name</a> -->
+                    <p class="title">Angry Dandy</p>
+                    <p class="text">Магазин трендовых мужских <br /> курток в Украине.</p>
+                    <!-- <p class="money">Доход с сайта: $ 5 000/год</p> -->
                     <a class="md-trigger info" data-modal="modal_info">
                         <img src="img/sec_06-more_icon.png" alt="">
                     </a>
@@ -379,11 +533,11 @@
             </div>
             <div class="grid_6">
                 <div class="item_06">
-                    <img src="img/sec_06-placeholder.png" alt="Design">
-                    <a class="md-trigger site" data-modal="modal_maket">Site name</a>
-                    <p class="title">Название</p>
-                    <p class="text">Разработка адаптивного сайта <br /> для такой-то фирмы.</p>
-                    <p class="money">Доход с сайта: $ 5 000/год</p>
+                    <img src="img/sec_06-site-4.png" alt="Design">
+                    <!-- <a class="md-trigger site" data-modal="modal_maket">Site name</a> -->
+                    <p class="title">Run Train by Mishcenko</p>
+                    <p class="text">Практические советы <br /> по профессиональному бегу.</p>
+                    <!-- <p class="money">Доход с сайта: $ 5 000/год</p> -->
                     <a class="md-trigger info" data-modal="modal_info">
                         <img src="img/sec_06-more_icon.png" alt="">
                     </a>
@@ -396,58 +550,58 @@
             <div class="invisible_content">
 
                 <div class="item_06">
-                    <img src="img/sec_06-placeholder.png" alt="Design">
-                    <a class="md-trigger  site" data-modal="modal_maket">Site name</a>
-                    <p class="title">Название</p>
-                    <p class="text">Разработка адаптивного сайта <br /> для такой-то фирмы.</p>
-                    <p class="money">Доход с сайта: $ 5 000/год</p>
-                    <a class="md-trigger zoom" data-modal="modal_maket">
-                        <img src="img/sec_06-zoom_icon.png" alt="">
-                    </a>
+                    <img src="img/sec_06-site-5.png" alt="Design">
+                    <!-- <a class="md-trigger  site" data-modal="modal_maket">Site name</a> -->
+                    <p class="title">Look Look</p>
+                    <p class="text">Студия наращивания ресниц <br /> и ухода за бровями.</p>
+                    <!-- <p class="money">Доход с сайта: $ 5 000/год</p> -->
                     <a class="md-trigger info" data-modal="modal_info">
                         <img src="img/sec_06-more_icon.png" alt="">
+                    </a>
+                    <a class="md-trigger zoom" data-modal="modal_maket">
+                        <img src="img/sec_06-zoom_icon.png" alt="">
                     </a>
                 </div>
 
                 <div class="item_06">
-                    <img src="img/sec_06-placeholder.png" alt="Design">
-                    <a class="md-trigger  site" data-modal="modal_maket">Site name</a>
-                    <p class="title">Название</p>
-                    <p class="text">Разработка адаптивного сайта <br /> для такой-то фирмы.</p>
-                    <p class="money">Доход с сайта: $ 5 000/год</p>
-                    <a class="md-trigger zoom" data-modal="modal_maket">
-                        <img src="img/sec_06-zoom_icon.png" alt="">
-                    </a>
+                    <img src="img/sec_06-site-6.png" alt="Design">
+                    <!-- <a class="md-trigger  site" data-modal="modal_maket">Site name</a> -->
+                    <p class="title">Paris Beauty</p>
+                    <p class="text">Средства из Франции по уходу <br /> за волосами в домашних условиях.</p>
+                    <!-- <p class="money">Доход с сайта: $ 5 000/год</p> -->
                     <a class="md-trigger info" data-modal="modal_info">
                         <img src="img/sec_06-more_icon.png" alt="">
+                    </a>
+                    <a class="md-trigger zoom" data-modal="modal_maket">
+                        <img src="img/sec_06-zoom_icon.png" alt="">
                     </a>
                 </div>
 
                 <div class="item_06">
-                    <img src="img/sec_06-placeholder.png" alt="Design">
-                    <a class="md-trigger  site" data-modal="modal_maket">Site name</a>
-                    <p class="title">Название</p>
-                    <p class="text">Разработка адаптивного сайта <br /> для такой-то фирмы.</p>
-                    <p class="money">Доход с сайта: $ 5 000/год</p>
-                    <a class="md-trigger zoom" data-modal="modal_maket">
-                        <img src="img/sec_06-zoom_icon.png" alt="">
-                    </a>
+                    <img src="img/sec_06-site-7.png" alt="Design">
+                    <!-- <a class="md-trigger  site" data-modal="modal_maket">Site name</a> -->
+                    <p class="title">Свадебные Платья</p>
+                    <p class="text">Дизайнерские свадебные и вечерние <br /> платья мирового уровня.</p>
+                    <!-- <p class="money">Доход с сайта: $ 5 000/год</p> -->
                     <a class="md-trigger info" data-modal="modal_info">
                         <img src="img/sec_06-more_icon.png" alt="">
+                    </a>
+                    <a class="md-trigger zoom" data-modal="modal_maket">
+                        <img src="img/sec_06-zoom_icon.png" alt="">
                     </a>
                 </div>
 
                 <div class="item_06">
-                    <img src="img/sec_06-placeholder.png" alt="Design">
-                    <a class="md-trigger  site" data-modal="modal_maket">Site name</a>
-                    <p class="title">Название</p>
-                    <p class="text">Разработка адаптивного сайта <br /> для такой-то фирмы.</p>
-                    <p class="money">Доход с сайта: $ 5 000/год</p>
-                    <a class="md-trigger zoom" data-modal="modal_maket">
-                        <img src="img/sec_06-zoom_icon.png" alt="">
-                    </a>
+                    <img src="img/sec_06-site-8.png" alt="Design">
+                    <!-- <a class="md-trigger  site" data-modal="modal_maket">Site name</a> -->
+                    <p class="title">Лишние сантиметры</p>
+                    <p class="text">Клуб здорового образа жизни. <br /> Разработка и полное ведение.</p>
+                    <p class="money">Цена заявки: до 100 руб.</p>
                     <a class="md-trigger info" data-modal="modal_info">
                         <img src="img/sec_06-more_icon.png" alt="">
+                    </a>
+                    <a class="md-trigger zoom" data-modal="modal_maket">
+                        <img src="img/sec_06-zoom_icon.png" alt="">
                     </a>
                 </div>
             </div>
@@ -462,12 +616,12 @@
     <div class="container_12">
         <div class="grid_5">
             <h2>7 фактов <br />доверия</h2>
-            <img src="img/sec_07-img-2.png" alt="Image">
-            <img src="img/sec_07-img-3.png" alt="Image">
+            <img class="sec_img-1" src="img/sec_07-img-2.png" alt="Image">
+            <img class="sec_img-2" src="img/sec_07-img-3.png" alt="Image">
         </div>
         <div class="grid_7">
             <div class="item_07-1">
-                <img src="img/sec_07-img-1.png" alt="Image">
+                <img class="sec_img-3" src="img/sec_07-img-1.png" alt="Image">
                 <div class="wrap">
                     <p class="number">01</p>
                     <p class="title">Дизайн</p>
@@ -479,15 +633,15 @@
             <div class="item_07-2">
                 <div class="wrap">
                     <p class="number">02</p>
-                    <p class="title">Оптиамизация</p>
+                    <p class="title">Оптимизация</p>
                     <p class="text">Адаптивная, Кроссбраузерная, <br />Валидная, Молниеносная загрузка сайта. Поддержка старых браузеров <br />и og protocol. Оптимизация <br />под поисковые системы.</p>
                 </div>
-                <img src="img/sec_07-img-5.png" alt="Image">
+                <img class="sec_img-4" src="img/sec_07-img-5.png" alt="Image">
             </div>
         </div>
         <div class="grid_7">
             <div class="item_07-3">
-                <img src="img/sec_07-img-4.png" alt="Image">
+                <img class="sec_img-5" src="img/sec_07-img-4.png" alt="Image">
                 <div class="wrap">
                     <p class="number">03</p>
                     <p class="title">Взаимодействие</p>
@@ -504,12 +658,12 @@
                     <p class="title">Структура</p>
                     <p class="text">Разработка маркетинговой структуры, упаковка проекта и построение <br />логической воронки продаж.</p>
                 </div>
-                <img src="img/sec_07-img-7.png" alt="Image">
+                <img class="sec_img-6" src="img/sec_07-img-7.png" alt="Image">
             </div>
         </div>
         <div class="grid_7">
             <div class="item_07-5">
-                <img src="img/sec_07-img-6.png" alt="Image">
+                <img class="sec_img-7" src="img/sec_07-img-6.png" alt="Image">
                 <div class="wrap">
                     <p class="number">05</p>
                     <p class="title">Аналитика</p>
@@ -526,13 +680,37 @@
                 </div>
             </div>
         </div>
-        <div class="grid_7">
+        <div class="grid_3">
+            <div class="small_sertif">
+            <div class="slide">
+                <p class="slide_number"><span class="current_slide text--gold title">1</span>/2</p>
+                <a href="img/sert-2.png" data-lightbox="sertif-set"><img src="img/sec_07-sert-2.png" alt=""></a>
+            </div>
+            <div class="slide">
+                <p class="slide_number"><span class="current_slide text--gold title">2</span>/2</p>
+                <a href="img/sert-4.png" data-lightbox="sertif-set"><img src="img/sec_07-sert-4.png" alt=""></a>
+            </div>
+        </div>
+        </div>
+        <div class="grid_4">
+        <div class="big_sertif">
+            <div class="slide"><a href="img/sert-3.png" data-lightbox="sertif-set"><img src="img/sec_07-sert-3.png" alt=""></a></div>
+            <div class="slide"><a href="img/sert-1.png" data-lightbox="sertif-set"><img src="img/sec_07-sert-1.png" alt=""></a></div>
+        </div>
             <div class="item_07-7">
                 <div class="wrap">
                     <p class="number">07</p>
-                    <p class="title">Уровень</p>
-                    <p class="text">Многочисленные награды, <br /> подтверждающие высокий уровень<br /> профессионализма агентства. </p>
+                    <div class="block_text">
+                        <p class="title">Уровень</p>
+                        <p class="text">Многочисленные награды, <br /> подтверждающие высокий уровень<br /> профессионализма агентства. </p>
+                    </div>
                 </div>
+            </div>
+            <div class="sert_sldier_mobile">
+                <div class="slide"><a href="img/sert-3.png" data-lightbox="sertif-set"><img src="img/sec_07-sert-3.png" alt=""></a></div>
+                <div class="slide"><a href="img/sert-1.png" data-lightbox="sertif-set"><img src="img/sec_07-sert-1.png" alt=""></a></div>
+                <a href="img/sert-2.png" data-lightbox="sertif-set"><img src="img/sec_07-sert-2.png" alt=""></a>
+                <a href="img/sert-4.png" data-lightbox="sertif-set"><img src="img/sec_07-sert-4.png" alt=""></a>
             </div>
         </div>
     </div>
@@ -568,7 +746,7 @@
                             <div class="calculator-group">
                                 <label class="calculator-group_label clearfix">
                                     <span>Конверсия</span> сайта (%):
-                                    <span class="numb-reg" id="showConv" data-conv="30">30</span>
+                                    <span class="numb-reg small_reg" id="showConv" data-conv="30">30</span>
                                 </label>
                                 <div class="calculator-slider ui-slider ui-slider-horizontal ui-widget ui-widget-content ui-corner-all" id="conv">
                                     <div class="ui-slider-range ui-widget-header ui-corner-all ui-slider-range-min"></div>
@@ -630,15 +808,15 @@
             <ul>
                 <li class="rotate_block">
                     <p class="text">Landing Page</p>
-                    <p class="price"><span>от</span> 1500$</p>
+                    <p class="price"><span>от</span> 1790$</p>
                 </li>
                 <li class="rotate_block">
                     <p class="text">Личный сайт/блог</p>
-                    <p class="price"><span>от</span> 3500$</p>
+                    <p class="price"><span>от</span> 3470$</p>
                 </li>
                 <li class="rotate_block">
                     <p class="text">Корпоративный сайт</p>
-                    <p class="price"><span>от</span> 4500$</p>
+                    <p class="price"><span>от</span> 4530$</p>
                 </li>
                 <li class="rotate_block">
                     <p class="text">Построение воронки продаж</p>
@@ -664,20 +842,39 @@
         <div class="grid_6">
             <h2>Получите <br />главные <br />выводы</h2>
             <div class="line line_07"></div>
-            <p>По созданию успешного <br />интернет-ресурса <span>абсолютно <br />бесплатно:</span> “Практический <br /> чек-лист проверки <br />Landing Page и сайтов”</p>
+            <p>По созданию успешного <br />интернет-ресурса <span>абсолютно <br />бесплатно:</span> “Практический <br /> Rezart Checklist проверки <br />Landing Page и сайтов”</p>
             <div class="line line_08"></div>
         </div>
         <div class="grid_6">
             <div class="block_form">
                 <form method="POST" class="form-inline" action="javascript:void(null);">
                 <!-- Hidden Required Fields -->
-                <input type="hidden" name="project_name" value="Genius Studio">
+                <input type="hidden" name="project_name" value="Rezart">
                 <input type="hidden" name="admin_email" value="project@rezart.com.ua">
-                <input type="hidden" name="form_subject" value="Горячая заявка">
+                <input type="hidden" name="form_subject" value="Rezart Checklist">
                 <!-- END Hidden Required Fields -->
 
+
+                <input type="hidden" name="orderType" value="Checklist">
+                <input type="hidden" name="page_url" value="<?php echo $data['page_url']; ?>">
+                <input type="hidden" name="user_agent" value="<?php echo $user_agent; ?>">
+                <input type="hidden" name="utm_source" value="<?php echo $data['utm_source']; ?>">
+                <input type="hidden" name="utm_campaign" value="<?php echo $data['utm_campaign']; ?>">
+                <input type="hidden" name="utm_medium" value="<?php echo $data['utm_medium']; ?>">
+                <input type="hidden" name="utm_term" value="<?php echo $data['utm_term']; ?>">
+                <input type="hidden" name="utm_content" value="<?php echo $data['utm_content']; ?>">
+                <input type="hidden" name="ref" value="<?php echo $data['ref']; ?>">
+                <input type="hidden" name="ip_address" value="<?php echo $data['ip_address']; ?>">
+                <input type="hidden" name="city" value="">
+                <input type="hidden" name="client_id" value="<?php echo $data['client_id']; ?>">
+                <input type="hidden" name="utmcsr" value="<?php echo $data['utmcsr']; ?>">
+                <input type="hidden" name="utmccn" value="<?php echo $data['utmccn']; ?>">
+                <input type="hidden" name="utmcmd" value="<?php echo $data['utmcmd']; ?>">
+                <input type="hidden" name="click_id" value="<?php echo $data['click_id']; ?>">
+                <input type="hidden" name="affiliate_id" value="<?php echo $data['affiliate_id']; ?>">
+
                 <span class="input field">
-                    <input id="name_10" required="" class="form-control name input__field " type="text" name="name" />
+                    <input id="name_10" required="" class="form-control name input__field " type="text" name="entry.1336947051" />
                     <label class="input__label" for="name_10">
                         <span class="input__label-content">Ваше имя</span>
                     </label>
@@ -685,7 +882,7 @@
 
 
                 <span class="input field">
-                    <input id="tel_10" required="" class="form-control name input__field" type="tel" name="custom_telephone"  />
+                    <input id="tel_10" required="" class="form-control name input__field" type="tel" name="entry.432827972"  />
                     <label class="input__label" for="tel_10">
                         <span class="input__label-content">Ваш телефон</span>
                     </label>
@@ -693,7 +890,7 @@
 
 
                 <span class="input field">
-                    <input id="mail_10" required="" class="form-control name input__field" type="email" name="email" />
+                    <input id="mail_10" required="" class="form-control name input__field" type="email" name="entry.1605749108" />
                     <label class="input__label" for="mail_10">
                         <span class="input__label-content">Ваш e-mail</span>
                     </label>
@@ -703,15 +900,7 @@
 
 
 
-                <!-- Просто любое дополнительное поле -->
-                <input type="hidden" name="other_data" value="Любое значение" />
-                <!-- Динамическое дополнительное поле для передачи данных с кнопок по всему сайту -->
-                <input type="hidden" class="pacet" name="form_pacet" value="">
-                <!-- GET RESPONCE INPUTS -->
-                <input type="hidden" name="start_day" value="0"/>
-                <!-- Если нужно отправлять и на почту и на GetResponse - указываем campaign_token -->
-                <input type="hidden" name="campaign_token" value=""/>
-                <!-- GET RESPONCE INPUTS -->
+
                 <div class="clear"></div>
 
 
@@ -750,7 +939,7 @@
             </div>
 
             <p class="title">Шло время</p>
-            <p class="grid_6-2--text">Наша команда выросла до 51 человека. За эти 2 <br />с нполовиной года мы перепробовали множество систем планирования, ведения проектов. Пытались подстроить развитие студии под условия, которые напрямую давили <br />на нас - геометрический рост количества участников <br />в коучинге. Все мы понимали, что с такой скоростью <br />не выйдет набирать и обучать команду. <br />Но мы нашли решения.</p>
+            <p class="grid_6-2--text">Наша команда выросла до 51 человека. За эти 2 <br />с половиной года мы перепробовали множество систем планирования, ведения проектов. Пытались подстроить развитие студии под условия, которые напрямую давили <br />на нас - геометрический рост количества участников <br />в коучинге. Все мы понимали, что с такой скоростью <br />не выйдет набирать и обучать команду. <br />Но мы нашли решения.</p>
         </div>
         <div class="grid_6">
             <p class="title">Достижение эффективности</p>
@@ -772,189 +961,68 @@
                 <div class="slide">
 
                         <div class="card">
-                            <img src="img/sec_11-placeholder.png" alt="Photo">
-                            <p class="name">Максим Гринец</p>
-                            <p class="position">Project Manager</p>
+                            <img src="img/sec_11-empl-1.png" alt="Photo">
+                            <p class="name">Игорь Головко</p>
+                            <p class="position">СЕО</p>
 
                             <div class="card-big">
-                                <img src="img/sec_11-placeholder-1.png" alt="Photo">
-                                <p class="name">Максим Гринец</p>
-                                <p class="description">«Кто ничего не знает, тот вынужден всему верить», — эту фразу повторяю себе каждый день и каждый день пытаюсь узнавать что-то новое.</p>
+                                <img src="img/sec_11-empl-big-1.png" alt="Photo">
+                                <p class="name">Игорь Головко</p>
+                                <p class="description">Основная миссия: Помогать людям, достигать своих бизнес-целей. Собственным примером.</p>
                             </div>
                         </div>
                         <div class="card">
-                            <img src="img/sec_11-placeholder.png" alt="Photo">
+                            <img src="img/sec_11-empl-2.png" alt="Photo">
                             <p class="name">Михаил Наскромнюк</p>
-                            <p class="position">Front-end Developer</p>
+                            <p class="position">Front-end</p>
 
                             <div class="card-big">
-                                <img src="img/sec_11-placeholder-1.png" alt="Photo">
+                                <img src="img/sec_11-empl-big-2.png" alt="Photo">
                                 <p class="name">Михаил Наскромнюк</p>
                                 <p class="description">Совершенствование тела и разума. Просто мне повезло и мое хобби стало моей профессией.</p>
                             </div>
                         </div>
 
                         <div class="card">
-                            <img src="img/sec_11-placeholder.png" alt="Photo">
-                            <p class="name">Дмитрий Чеботару</p>
-                            <p class="position">Front-end Developer</p>
+                            <img src="img/sec_11-empl-3.png" alt="Photo">
+                            <p class="name">Максим Гринец</p>
+                            <p class="position">Project Manager</p>
 
                             <div class="card-big">
-                                <img src="img/sec_11-placeholder-1.png" alt="Photo">
+                                <img src="img/sec_11-empl-big-3.png" alt="Photo">
+                                <p class="name">Максим Гринец</p>
+                                <p class="description">«Кто ничего не знает, тот вынужден всему верить», — эту фразу повторяю себе каждый день и каждый день пытаюсь узнавать что-то новое.</p>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <img src="img/sec_11-empl-4.png" alt="Photo">
+                            <p class="name">Дмитрий Чеботару</p>
+                            <p class="position">Front End</p>
+
+                            <div class="card-big">
+                                <img src="img/sec_11-empl-big-4.png" alt="Photo">
                                 <p class="name">Дмитрий Чеботару</p>
                                 <p class="description">Имеет склонность к перфикционизму (в хорошем смысле слова). Стремится к тому, чтобы каждый клиент получил идеальный продукт.</p>
                             </div>
                         </div>
                         <div class="card">
-                            <img src="img/sec_11-placeholder.png" alt="Photo">
-                            <p class="name">Геннадий Кирпяков</p>
-                            <p class="position">PPC manager</p>
+                            <img src="img/sec_11-empl-5.png" alt="Photo">
+                            <p class="name">Екатерина Генко</p>
+                            <p class="position">Designer</p>
 
                             <div class="card-big">
-                                <img src="img/sec_11-placeholder-1.png" alt="Photo">
-                                <p class="name">Геннадий Кирпяков</p>
-                                <p class="description">Далеко-далеко за словесными горами в стране, гласных и согласных живут рыбные тексты.</p>
-                            </div>
-                        </div>
-                        <div class="card">
-                            <img src="img/sec_11-placeholder.png" alt="Photo">
-                            <p class="name">Имя Фамилия</p>
-                            <p class="position">Должность</p>
-
-                            <div class="card-big">
-                                <img src="img/sec_11-placeholder-1.png" alt="Photo">
-                                <p class="name">Имя Фамилия</p>
-                                <p class="description">Далеко-далеко за словесными горами в стране, гласных и согласных живут рыбные тексты.</p>
+                                <img src="img/sec_11-empl-big-5.png" alt="Photo">
+                                <p class="name">Екатерина Генко</p>
+                                <p class="description">Мне нравится делать дизайны с характером, с чувствами, передавать неповторимый образ. Посетители сайта должны приходить в восторг – и это моя работа.</p>
                             </div>
                         </div>
                     </div>
-
-                <div class="slide">
-
-                    <div class="card">
-                        <img src="img/sec_11-placeholder.png" alt="Photo">
-                        <p class="name">Имя Фамилия</p>
-                        <p class="position">Должность</p>
-
-                        <div class="card-big">
-                            <img src="img/sec_11-placeholder-1.png" alt="Photo">
-                            <p class="name">Имя Фамилия</p>
-                            <p class="description">Далеко-далеко за словесными горами в стране, гласных и согласных живут рыбные тексты.</p>
-                        </div>
-                    </div>
-                    <div class="card">
-                        <img src="img/sec_11-placeholder.png" alt="Photo">
-                        <p class="name">Имя Фамилия</p>
-                        <p class="position">Должность</p>
-
-                        <div class="card-big">
-                            <img src="img/sec_11-placeholder-1.png" alt="Photo">
-                            <p class="name">Имя Фамилия</p>
-                            <p class="description">Далеко-далеко за словесными горами в стране, гласных и согласных живут рыбные тексты.</p>
-                        </div>
-                    </div>
-
-                    <div class="card">
-                        <img src="img/sec_11-placeholder.png" alt="Photo">
-                        <p class="name">Имя Фамилия</p>
-                        <p class="position">Должность</p>
-
-                        <div class="card-big">
-                            <img src="img/sec_11-placeholder-1.png" alt="Photo">
-                            <p class="name">Имя Фамилия</p>
-                            <p class="description">Далеко-далеко за словесными горами в стране, гласных и согласных живут рыбные тексты.</p>
-                        </div>
-                    </div>
-                    <div class="card">
-                        <img src="img/sec_11-placeholder.png" alt="Photo">
-                        <p class="name">Имя Фамилия</p>
-                        <p class="position">Должность</p>
-
-                        <div class="card-big">
-                            <img src="img/sec_11-placeholder-1.png" alt="Photo">
-                            <p class="name">Имя Фамилия</p>
-                            <p class="description">Далеко-далеко за словесными горами в стране, гласных и согласных живут рыбные тексты.</p>
-                        </div>
-                    </div>
-                    <div class="card">
-                        <img src="img/sec_11-placeholder.png" alt="Photo">
-                        <p class="name">Имя Фамилия</p>
-                        <p class="position">Должность</p>
-
-                        <div class="card-big">
-                            <img src="img/sec_11-placeholder-1.png" alt="Photo">
-                            <p class="name">Имя Фамилия</p>
-                            <p class="description">Далеко-далеко за словесными горами в стране, гласных и согласных живут рыбные тексты.</p>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="slide">
-
-                        <div class="card">
-                            <img src="img/sec_11-placeholder.png" alt="Photo">
-                            <p class="name">Имя Фамилия</p>
-                            <p class="position">Должность</p>
-
-                            <div class="card-big">
-                                <img src="img/sec_11-placeholder-1.png" alt="Photo">
-                                <p class="name">Имя Фамилия</p>
-                                <p class="description">Далеко-далеко за словесными горами в стране, гласных и согласных живут рыбные тексты.</p>
-                            </div>
-                        </div>
-                        <div class="card">
-                            <img src="img/sec_11-placeholder.png" alt="Photo">
-                            <p class="name">Имя Фамилия</p>
-                            <p class="position">Должность</p>
-
-                            <div class="card-big">
-                                <img src="img/sec_11-placeholder-1.png" alt="Photo">
-                                <p class="name">Имя Фамилия</p>
-                                <p class="description">Далеко-далеко за словесными горами в стране, гласных и согласных живут рыбные тексты.</p>
-                            </div>
-                        </div>
-
-                        <div class="card">
-                            <img src="img/sec_11-placeholder.png" alt="Photo">
-                            <p class="name">Имя Фамилия</p>
-                            <p class="position">Должность</p>
-
-                            <div class="card-big">
-                                <img src="img/sec_11-placeholder-1.png" alt="Photo">
-                                <p class="name">Имя Фамилия</p>
-                                <p class="description">Далеко-далеко за словесными горами в стране, гласных и согласных живут рыбные тексты.</p>
-                            </div>
-                        </div>
-                        <div class="card">
-                            <img src="img/sec_11-placeholder.png" alt="Photo">
-                            <p class="name">Имя Фамилия</p>
-                            <p class="position">Должность</p>
-
-                            <div class="card-big">
-                                <img src="img/sec_11-placeholder-1.png" alt="Photo">
-                                <p class="name">Имя Фамилия</p>
-                                <p class="description">Далеко-далеко за словесными горами в стране, гласных и согласных живут рыбные тексты.</p>
-                            </div>
-                        </div>
-                        <div class="card">
-                            <img src="img/sec_11-placeholder.png" alt="Photo">
-                            <p class="name">Имя Фамилия</p>
-                            <p class="position">Должность</p>
-
-                            <div class="card-big">
-                                <img src="img/sec_11-placeholder-1.png" alt="Photo">
-                                <p class="name">Имя Фамилия</p>
-                                <p class="description">Далеко-далеко за словесными горами в стране, гласных и согласных живут рыбные тексты.</p>
-                            </div>
-                        </div>
-                    </div>
-
                 </div>
 
             <div class="signature">
                 <img src="img/golovco.png" alt="Signature">
                 <div class="text">
-                    <p class="position">Со-снователь агентства</p>
+                    <p class="position">Со-основатель агентства</p>
                     <p class="name">Игорь Головко</p>
                 </div>
                 <div class="clear"></div>
@@ -1000,8 +1068,8 @@
                 <p class="text">Многие интересуются, зачем <br /> им необходимо создавать продающую страницу, если уже есть готовый сайт. Создание продающей страницы – это не просто очередное веяние моды, <br /> а must have для тех, кому нужен мощный рабочий инструмент для <br /> увеличения продаж. Ни один <br /> инструмент-маркетинга не сравнится с этой задачей.</p>
             </div>
             <div class="item_12">
-                <p class="title">Что такое мультителинг?</p>
-                <p class="text">Мультителинг – технология, <br /> позволяющая трансформировать <br /> односторонний сайт под разные <br /> запросы пользователей.</p>
+                <p class="title">Что такое мультилендинг?</p>
+                <p class="text">Мультилендинг – технология, <br /> позволяющая трансформировать <br /> одностраничный сайт под разные <br /> запросы пользователей.</p>
             </div>
         </div>
     </div>
@@ -1017,19 +1085,17 @@
         <div class="grid_6">
             <div class="row tel_row">
                 <p>Позвоните нам</p>
-                <a href="tel:+380999999999" class="tel">+38 093 700 76 81</a>
-                <a href="skype:zgreedz" class="skype">+38 093 700 76 81</a>
+                <a href="tel:0937007681" class="tel">+38 093 700 76 81</a>
+                <a class="md-trigger skype" data-modal="modal_callback">+38 093 700 76 81</a>
                 <div class="clear"></div>
             </div>
             <div class="row modal_row">
                 <a class="md-trigger" data-modal="modal_request">Отправить</a>
-                <p>Online заявку</p>
+                <p class="online_request">Online заявку</p>
             </div>
             <div class="row docs_row">
-                <p>Скачайте нашу</p>
-                <span>Презентацию</span>
-                <p>или</p>
-                <a href="http://rezart.com.ua/app/brif/">Бриф</a>
+                <p>Скачайте наш</p>
+                <a class="link_brief" href="http://rezart.agency/docs/brif.docx">Бриф</a>
             </div>
         </div>
     </div>
@@ -1042,20 +1108,39 @@
         <div class="grid_6">
             <h2>Получите <br />главные <br />выводы</h2>
             <div class="line line_09"></div>
-            <p>По созданию успешного  интернет-ресурса <span>абсолютно  бесплатно:</span> “Практический чек-лист проверки  Landing Page и сайтов”</p>
+            <p>По созданию успешного  интернет-ресурса <span>абсолютно  бесплатно:</span> “Практический Rezart Checklist проверки  Landing Page и сайтов”</p>
              <div class="line line_10"></div>
         </div>
         <div class="grid_6">
             <div class="block_form">
                 <form id="form_callback" method="POST" class="form-inline" action="javascript:void(null);">
                 <!-- Hidden Required Fields -->
-                <input type="hidden" name="project_name" value="Genius Studio">
+                <input type="hidden" name="project_name" value="Rezart">
                 <input type="hidden" name="admin_email" value="project@rezart.com.ua">
-                <input type="hidden" name="form_subject" value="Горячая заявка">
+                <input type="hidden" name="form_subject" value="Rezart Checklist">
                 <!-- END Hidden Required Fields -->
 
+
+                <input type="hidden" name="orderType" value="Checklist">
+                <input type="hidden" name="page_url" value="<?php echo $data['page_url']; ?>">
+                <input type="hidden" name="user_agent" value="<?php echo $user_agent; ?>">
+                <input type="hidden" name="utm_source" value="<?php echo $data['utm_source']; ?>">
+                <input type="hidden" name="utm_campaign" value="<?php echo $data['utm_campaign']; ?>">
+                <input type="hidden" name="utm_medium" value="<?php echo $data['utm_medium']; ?>">
+                <input type="hidden" name="utm_term" value="<?php echo $data['utm_term']; ?>">
+                <input type="hidden" name="utm_content" value="<?php echo $data['utm_content']; ?>">
+                <input type="hidden" name="ref" value="<?php echo $data['ref']; ?>">
+                <input type="hidden" name="ip_address" value="<?php echo $data['ip_address']; ?>">
+                <input type="hidden" name="city" value="">
+                <input type="hidden" name="client_id" value="<?php echo $data['client_id']; ?>">
+                <input type="hidden" name="utmcsr" value="<?php echo $data['utmcsr']; ?>">
+                <input type="hidden" name="utmccn" value="<?php echo $data['utmccn']; ?>">
+                <input type="hidden" name="utmcmd" value="<?php echo $data['utmcmd']; ?>">
+                <input type="hidden" name="click_id" value="<?php echo $data['click_id']; ?>">
+                <input type="hidden" name="affiliate_id" value="<?php echo $data['affiliate_id']; ?>">
+
                     <span class="input field">
-                    <input id="name_14" required="" class="form-control name input__field " type="text" name="name" />
+                    <input id="name_14" required="" class="form-control name input__field " type="text" name="entry.1336947051" />
                     <label class="input__label" for="name_14">
                         <span class="input__label-content">Ваше имя</span>
                     </label>
@@ -1063,7 +1148,7 @@
 
 
                 <span class="input field">
-                    <input id="tel_14" required="" class="form-control name input__field" type="tel" name="custom_telephone"  />
+                    <input id="tel_14" required="" class="form-control name input__field" type="tel" name="entry.432827972"  />
                     <label class="input__label" for="tel_14">
                         <span class="input__label-content">Ваш телефон</span>
                     </label>
@@ -1071,7 +1156,7 @@
 
 
                 <span class="input field">
-                    <input id="mail_14" required="" class="form-control name input__field" type="email" name="email" />
+                    <input id="mail_14" required="" class="form-control name input__field" type="email" name="entry.1605749108" />
                     <label class="input__label" for="mail_14">
                         <span class="input__label-content">Ваш e-mail</span>
                     </label>
@@ -1081,15 +1166,7 @@
 
 
 
-                <!-- Просто любое дополнительное поле -->
-                <input type="hidden" name="other_data" value="Любое значение" />
-                <!-- Динамическое дополнительное поле для передачи данных с кнопок по всему сайту -->
-                <input type="hidden" class="pacet" name="form_pacet" value="">
-                <!-- GET RESPONCE INPUTS -->
-                <input type="hidden" name="start_day" value="0"/>
-                <!-- Если нужно отправлять и на почту и на GetResponse - указываем campaign_token -->
-                <input type="hidden" name="campaign_token" value=""/>
-                <!-- GET RESPONCE INPUTS -->
+
                 <div class="clear"></div>
 
 
@@ -1109,7 +1186,7 @@
             <a class="logo" target="_blank" href="http://rezart.com.ua/"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 792"><path d="M216.8 247.3c150.2 0 147.2 0 156.1 0 50.4 0 100.2 42.1 100.4 102.3 0.1 56.2-43.8 91.1-72.4 98 0.9 0 38.4 66.8 38.4 66.8l172.2-291.2 179.5 305.3c5.4 9.9 8.8 15.6 11.3 22.7 5.3 15.3-8.8 25.6-18.7 25.7 -9.7 0.1-14.6-3.6-24.4-8.9l-108.1-62 -39.9-74.4 108.4 63L610.6 310.8c0 0-139.3 237.5-144 244.6 -8.1 12.1-13.4 21.6-28.4 21.6 -14.6 0-21.4-9.6-29-21.3 -1.7-3.4-89.8-148.9-89.8-148.9 32.1 0.1 28.9 0.1 54.8 0.1 21.1 0 54-18.6 54-55.7 0-22.2-17.1-56.4-57.9-56.4 -45.2 0-126.3 0-126.3 0L216.8 247.3z"/><path d="M217.1 351l47.7 83.4 -0.3 119.8c0 0 0.5 22.5-24.2 22.9 -0.3-0.3-23.7 1.8-23.7-22.2C216.7 530.8 217.1 351 217.1 351z"/><path d="M264.9 434.4l-0.1 119c0 0 0.4 23.3-24.3 23.7"/></svg></a>
         </div>
         <div class="grid_3">
-            <p><i class="fa fa-map-marker" aria-hidden="true"></i> <br /> 01133, <br />Украина, Киев, <br />ул. Евгения Коновальца, <br />36д, 8 этаж. </p>
+            <a target="_blank" href="https://goo.gl/maps/pfmWhnoq33p"><p class="adress"><i class="fa fa-map-marker" aria-hidden="true"></i> <br /> 01133, <br />Украина, Киев, <br />ул. Евгения Коновальца, <br />36д, 8 этаж. </p></a>
         </div>
         <div class="grid_4">
             <p class="gray">Мы создаем качественные сайты, <br /> и продающие страницы <br />которые помогают <br /><span>расти бизнесу</span></p>
@@ -1169,12 +1246,32 @@
                 <div>
                     <form id="form_callback_call" method="POST" class="form-inline" action="javascript:void(null);">
                         <!-- Hidden Required Fields -->
-                        <input type="hidden" name="project_name" value="Genius Studio">
+                        <input type="hidden" name="project_name" value="Rezart">
                         <input type="hidden" name="admin_email" value="project@rezart.com.ua">
-                        <input type="hidden" name="form_subject" value="Заказ обратного звонка">
+                        <input type="hidden" name="form_subject" value="Rezart Callback">
                         <!-- END Hidden Required Fields -->
+
+
+                        <input type="hidden" name="orderType" value="Callback">
+                        <input type="hidden" name="page_url" value="<?php echo $data['page_url']; ?>">
+                        <input type="hidden" name="user_agent" value="<?php echo $user_agent; ?>">
+                        <input type="hidden" name="utm_source" value="<?php echo $data['utm_source']; ?>">
+                        <input type="hidden" name="utm_campaign" value="<?php echo $data['utm_campaign']; ?>">
+                        <input type="hidden" name="utm_medium" value="<?php echo $data['utm_medium']; ?>">
+                        <input type="hidden" name="utm_term" value="<?php echo $data['utm_term']; ?>">
+                        <input type="hidden" name="utm_content" value="<?php echo $data['utm_content']; ?>">
+                        <input type="hidden" name="ref" value="<?php echo $data['ref']; ?>">
+                        <input type="hidden" name="ip_address" value="<?php echo $data['ip_address']; ?>">
+                        <input type="hidden" name="city" value="">
+                        <input type="hidden" name="client_id" value="<?php echo $data['client_id']; ?>">
+                        <input type="hidden" name="utmcsr" value="<?php echo $data['utmcsr']; ?>">
+                        <input type="hidden" name="utmccn" value="<?php echo $data['utmccn']; ?>">
+                        <input type="hidden" name="utmcmd" value="<?php echo $data['utmcmd']; ?>">
+                        <input type="hidden" name="click_id" value="<?php echo $data['click_id']; ?>">
+                        <input type="hidden" name="affiliate_id" value="<?php echo $data['affiliate_id']; ?>">
+
                 <span class="input field">
-                    <input id="name_cb" required="" class="form-control name input__field " type="text" name="name" />
+                    <input id="name_cb" required="" class="form-control name input__field " type="text" name="entry.1336947051" />
                     <label class="input__label" for="name_cb">
                         <span class="input__label-content">Ваше имя</span>
                     </label>
@@ -1182,7 +1279,7 @@
 
 
                 <span class="input field">
-                    <input id="tel_cb" required="" class="form-control name input__field" type="tel" name="custom_telephone"  />
+                    <input id="tel_cb" required="" class="form-control name input__field" type="tel" name="entry.432827972"  />
                     <label class="input__label" for="tel_cb">
                         <span class="input__label-content">Ваш телефон</span>
                     </label>
@@ -1246,13 +1343,32 @@
                 <div>
                     <form id="form_callback_request" method="POST" class="form-inline" action="javascript:void(null);">
                         <!-- Hidden Required Fields -->
-                        <input type="hidden" name="project_name" value="Genius Studio">
+                        <input type="hidden" name="project_name" value="Rezart">
                         <input type="hidden" name="admin_email" value="project@rezart.com.ua">
-                        <input type="hidden" name="form_subject" value="Заявка">
+                        <input type="hidden" name="form_subject" value="Rezart Calculator">
                         <!-- END Hidden Required Fields -->
 
+
+                        <input type="hidden" name="orderType" value="Calculator">
+                        <input type="hidden" name="page_url" value="<?php echo $data['page_url']; ?>">
+                        <input type="hidden" name="user_agent" value="<?php echo $user_agent; ?>">
+                        <input type="hidden" name="utm_source" value="<?php echo $data['utm_source']; ?>">
+                        <input type="hidden" name="utm_campaign" value="<?php echo $data['utm_campaign']; ?>">
+                        <input type="hidden" name="utm_medium" value="<?php echo $data['utm_medium']; ?>">
+                        <input type="hidden" name="utm_term" value="<?php echo $data['utm_term']; ?>">
+                        <input type="hidden" name="utm_content" value="<?php echo $data['utm_content']; ?>">
+                        <input type="hidden" name="ref" value="<?php echo $data['ref']; ?>">
+                        <input type="hidden" name="ip_address" value="<?php echo $data['ip_address']; ?>">
+                        <input type="hidden" name="city" value="">
+                        <input type="hidden" name="client_id" value="<?php echo $data['client_id']; ?>">
+                        <input type="hidden" name="utmcsr" value="<?php echo $data['utmcsr']; ?>">
+                        <input type="hidden" name="utmccn" value="<?php echo $data['utmccn']; ?>">
+                        <input type="hidden" name="utmcmd" value="<?php echo $data['utmcmd']; ?>">
+                        <input type="hidden" name="click_id" value="<?php echo $data['click_id']; ?>">
+                        <input type="hidden" name="affiliate_id" value="<?php echo $data['affiliate_id']; ?>">
+
                     <span class="input field">
-                    <input id="name_rq" required="" class="form-control name input__field " type="text" name="name" />
+                    <input id="name_rq" required="" class="form-control name input__field " type="text" name="entry.1336947051" />
                     <label class="input__label" for="name_rq">
                         <span class="input__label-content">Ваше имя</span>
                     </label>
@@ -1260,7 +1376,7 @@
 
 
                 <span class="input field">
-                    <input id="tel_rq" required="" class="form-control input__field" type="tel" name="custom_telephone"  />
+                    <input id="tel_rq" required="" class="form-control input__field" type="tel" name="entry.432827972"  />
                     <label class="input__label" for="tel_rq">
                         <span class="input__label-content">Ваш телефон</span>
                     </label>
@@ -1268,21 +1384,17 @@
 
 
                 <span class="input field">
-                    <input id="mail_rq" required="" class="form-control input__field" type="email" name="email" />
+                    <input id="mail_rq" required="" class="form-control input__field" type="email" name="entry.1605749108" />
                     <label class="input__label" for="mail_rq">
                         <span class="input__label-content">Ваш e-mail</span>
                     </label>
                 </span>
 
-                    <div class="field">
+
                         <input class="sumDay" type="hidden" name="Сумма за день" />
-                    </div>
-                    <div class="field">
+
                         <input name="Сумма за месяц" type="hidden" class="sumMonth" value="">
-                    </div>
-                    <div class="field">
                         <input name="Закзаов в день" type="hidden" class="ordersDay" value="">
-                    </div>
 
 
                     <button type="submit" class="btn" name="send">Отправить заявку</button>
@@ -1320,13 +1432,32 @@
                 <div>
                     <form id="form_callback_request" method="POST" class="form-inline" action="javascript:void(null);">
                         <!-- Hidden Required Fields -->
-                        <input type="hidden" name="project_name" value="Genius Studio">
+                        <input type="hidden" name="project_name" value="Rezart">
                         <input type="hidden" name="admin_email" value="project@rezart.com.ua">
-                        <input type="hidden" name="form_subject" value="Заявка">
+                        <input type="hidden" name="form_subject" value="Rezart Callback+">
                         <!-- END Hidden Required Fields -->
 
-                    <span class="input field">
-                    <input id="name_rq" required="" class="form-control name input__field " type="text" name="name" />
+
+                        <input type="hidden" name="orderType" value="Callback+">
+                        <input type="hidden" name="page_url" value="<?php echo $data['page_url']; ?>">
+                        <input type="hidden" name="user_agent" value="<?php echo $user_agent; ?>">
+                        <input type="hidden" name="utm_source" value="<?php echo $data['utm_source']; ?>">
+                        <input type="hidden" name="utm_campaign" value="<?php echo $data['utm_campaign']; ?>">
+                        <input type="hidden" name="utm_medium" value="<?php echo $data['utm_medium']; ?>">
+                        <input type="hidden" name="utm_term" value="<?php echo $data['utm_term']; ?>">
+                        <input type="hidden" name="utm_content" value="<?php echo $data['utm_content']; ?>">
+                        <input type="hidden" name="ref" value="<?php echo $data['ref']; ?>">
+                        <input type="hidden" name="ip_address" value="<?php echo $data['ip_address']; ?>">
+                        <input type="hidden" name="city" value="">
+                        <input type="hidden" name="client_id" value="<?php echo $data['client_id']; ?>">
+                        <input type="hidden" name="utmcsr" value="<?php echo $data['utmcsr']; ?>">
+                        <input type="hidden" name="utmccn" value="<?php echo $data['utmccn']; ?>">
+                        <input type="hidden" name="utmcmd" value="<?php echo $data['utmcmd']; ?>">
+                        <input type="hidden" name="click_id" value="<?php echo $data['click_id']; ?>">
+                        <input type="hidden" name="affiliate_id" value="<?php echo $data['affiliate_id']; ?>">
+
+                <span class="input field">
+                    <input id="name_rq" required="" class="form-control name input__field " type="text" name="entry.1336947051" />
                     <label class="input__label" for="name_rq">
                         <span class="input__label-content">Ваше имя</span>
                     </label>
@@ -1334,7 +1465,7 @@
 
 
                 <span class="input field">
-                    <input id="tel_rq" required="" class="form-control name input__field" type="tel" name="custom_telephone"  />
+                    <input id="tel_rq" required="" class="form-control name input__field" type="tel" name="entry.432827972"  />
                     <label class="input__label" for="tel_rq">
                         <span class="input__label-content">Ваш телефон</span>
                     </label>
@@ -1342,7 +1473,7 @@
 
 
                 <span class="input field">
-                    <input id="mail_rq" required="" class="form-control name input__field" type="email" name="email" />
+                    <input id="mail_rq" required="" class="form-control name input__field" type="email" name="entry.1605749108" />
                     <label class="input__label" for="mail_rq">
                         <span class="input__label-content">Ваш e-mail</span>
                     </label>
@@ -1468,6 +1599,7 @@
 
 
     <script>var scr = {"scripts":[
+        {"src" : "http://api-maps.yandex.ru/2.0-stable/?load=package.standard&lang=ru-RU", "async" : false},
         {"src" : "js/libs.js", "async" : false},
         {"src" : "js/common.js", "async" : false}
         ]};!function(t,n,r){"use strict";var c=function(t){if("[object Array]"!==Object.prototype.toString.call(t))return!1;for(var r=0;r<t.length;r++){var c=n.createElement("script"),e=t[r];c.src=e.src,c.async=e.async,n.body.appendChild(c)}return!0};t.addEventListener?t.addEventListener("load",function(){c(r.scripts);},!1):t.attachEvent?t.attachEvent("onload",function(){c(r.scripts)}):t.onload=function(){c(r.scripts)}}(window,document,scr);

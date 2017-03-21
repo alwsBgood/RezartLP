@@ -134,13 +134,13 @@
     }
     #sec_06{
       .item_06{
+          display: block !important;
           max-width: 340px;
-          margin-left: auto;
-          margin-right: auto;
+          margin-left: auto !important;
+          margin-right: auto !important;
           margin-bottom: 80px;
-          display: block;
           img{width: 100%;}
-          .title, .text{margin-left: 0;}
+          .title, .text, .money{margin-left: 0;}
           &:after{
             width: 100%;
           }
@@ -156,6 +156,8 @@
         width: 100%;
         .wrap{
             margin: 0;
+            // float: none;
+            width: 100%;
         }
       }
       .sec_img-3{display: none}
@@ -169,11 +171,20 @@
       .small_sertif{
           display: none;
       }
+      .sert_sldier_mobile{
+        display: block;
+        margin: 70px auto 0;
+        max-width: 300px;
+        img{
+            display: block;
+            margin: 0 auto;
+        }
+      }
       .slick-dots {
           top: -35px;
           left: 50%;
-          width: 100%;
-          margin-left: -80px;
+          width: 300px;
+          margin-left: -150px;
       }
       .sec_img-4, .sec_img-7{display: none}
       .item_07-7 .wrap{
@@ -203,6 +214,12 @@
         }
         .online_request, .link_brief{
             float: right;
+        }
+        .tel_row .tel{
+          display: inline-block;
+        }
+        .tel_row .skype{
+          display: none;
         }
     }
     #sec_14{
@@ -255,7 +272,7 @@
        a+a{margin-left: 0 }
       }
       .logo_rezart{
-        display: inline-block;
+        display: none;
         float: none;
         margin-top: 20px;
       }
@@ -284,6 +301,14 @@
 }
 
 @media (max-width: 500px){
+    div[id*="modal_"]{
+        min-width: 290px;
+        .md-content{
+            min-width: auto;
+            overflow: hidden;
+            width: 100%;
+        }
+    }
     #sec_07{
       [class*='sec_img']{
         margin-left: 0px
@@ -303,23 +328,6 @@
       .item_07-3{
           margin-bottom: 0;
           .sec_img-5{margin-bottom: 40px;}
-      }
-      .big_sertif{
-          display: none;
-      }
-      .small_sertif{
-          display: none;
-      }
-      .slick-dots {
-          top: -35px;
-          left: 50%;
-          width: 100%;
-          margin-left: -80px;
-      }
-      .sec_img-4, .sec_img-7{display: none}
-      .item_07-7 .wrap{
-        padding-top: 0;
-        .block_text{margin-left: 80px;}
       }
     }
     #sec_08{
