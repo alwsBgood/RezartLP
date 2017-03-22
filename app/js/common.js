@@ -5,21 +5,6 @@ if (localStorage.name && localStorage.email)  {
   $('input[type="tel"]').val(localStorage.phone);
 }
 
-// Запись местоположения
-
-// jQuery(document).ready(function($) {
-
-// });
-
-
-$(document).ready(function(){
-  setTimeout(function() {
-    var loc = ymaps.geolocation.city+', '+ymaps.geolocation.region+', '+ymaps.geolocation.country;
-    $('[name=city').val(loc);
-  }, 2000);
-});
-
-
 
 $(function() {
   $("[name=send]").click(function (e) {
@@ -31,6 +16,8 @@ $(function() {
 
    var error;
    var ref = btn.closest('form').find('[required]');
+   var loc = ymaps.geolocation.city+', '+ymaps.geolocation.region+', '+ymaps.geolocation.country;
+   $('[name=city').val(loc);
    var msg = btn.closest('form').find('input, textarea, select');
    var short_msg = btn.closest('form').find('[name=project_name], [name=admin_email], [name=form_subject], [name=city], [name=page_url], [name=user_agent], [type="text"], [type="email"], [type="tel"]');
    var send_btn = btn.closest('form').find('[name=send]');
@@ -38,11 +25,13 @@ $(function() {
    var send_options = btn.closest('form').find('[name=campaign_token]');;
    var formType = btn.closest('form').find('[name=form_type]').val();
 
+
    var alertImage = '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 286.1 286.1"><path d="M143 0C64 0 0 64 0 143c0 79 64 143 143 143 79 0 143-64 143-143C286.1 64 222 0 143 0zM143 259.2c-64.2 0-116.2-52-116.2-116.2S78.8 26.8 143 26.8s116.2 52 116.2 116.2S207.2 259.2 143 259.2zM143 62.7c-10.2 0-18 5.3-18 14v79.2c0 8.6 7.8 14 18 14 10 0 18-5.6 18-14V76.7C161 68.3 153 62.7 143 62.7zM143 187.7c-9.8 0-17.9 8-17.9 17.9 0 9.8 8 17.8 17.9 17.8s17.8-8 17.8-17.8C160.9 195.7 152.9 187.7 143 187.7z" fill="#E2574C"/></svg>';
 
    localStorage.name = form.find('input[name="entry.1336947051"]').val();
    localStorage.email = form.find('input[type="email"]').val();
    localStorage.phone = form.find('input[type="tel"]').val();
+
 
    $(ref).each(function() {
     if ($(this).val() == '') {
@@ -226,11 +215,10 @@ function calculatorLP(){
 
 
             var sum = Number(ui.value * (jQuery( "#conv" ).slider( "value" ) / 100) * jQuery( "#money" ).slider( "value" )).toFixed() * 0.7;
-            sum = sum - (sum%1);
+            sum = sum.toFixed();
             var sumDay = sum + "$";
             var sumMonth = sum * 9 + "$";
             var ordersDay = ui.value * (jQuery( "#conv" ).slider( "value" ) / 100);
-
 
             jQuery("#moneyDay").text(sumDay);
             jQuery("#moneyMonth").text(sumMonth);
@@ -257,10 +245,8 @@ function calculatorLP(){
         slide: function( event, ui ) {
             jQuery( "#showConv" ).text(ui.value).attr("data-conv", ui.value);
 
-
-
             var sum = Number((ui.value  / 100) * jQuery( "#count" ).slider( "value" ) * jQuery( "#money" ).slider( "value" )).toFixed() * 0.7;
-            sum = sum - (sum%1);
+            sum = sum.toFixed();
             var sumDay = sum + "$";
             var sumMonth = sum * 30 + "$";
             var ordersDay = (ui.value / 100) * jQuery( "#count" ).slider( "value" );
@@ -288,10 +274,8 @@ function calculatorLP(){
         slide: function( event, ui ) {
             jQuery( "#showMoney" ).text(ui.value).attr("data-money", ui.value);
 
-
-
             var sum = Number(ui.value * (jQuery( "#conv" ).slider( "value" ) / 100) * jQuery( "#count" ).slider( "value" )).toFixed() * 0.7;
-            sum = sum - (sum%1);
+            sum = sum.toFixed();
             var sumDay = sum + "$";
             var sumMonth = sum * 30 + "$";
             var ordersDay = jQuery( "#count" ).slider( "value" ) * (jQuery( "#conv" ).slider( "value" ) / 100);
