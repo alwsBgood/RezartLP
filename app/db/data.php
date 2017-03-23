@@ -67,7 +67,6 @@
     'utm_content'  => isset($_GET['utm_content']) ? $_GET['utm_content'] : null,
     'ref'          => isset($_SERVER["HTTP_REFERER"]) ? $_SERVER["HTTP_REFERER"] : null,
     'ip_address'   => get_client_ip(),
-    'city'         => get_client_ip(),
     'client_id'    => isset($_COOKIE["_ga"]) ? substr($_COOKIE["_ga"], 6) : null,
     'utmcsr'       => isset($utmcsr) ? $utmcsr : null,
     'utmccn'       => isset($utmccn) ? $utmccn : null,
