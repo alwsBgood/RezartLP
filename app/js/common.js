@@ -78,12 +78,13 @@ $(function() {
          data: form.serialize(),
        });
        // Отправка в Google sheets
-      //  $.ajax({
-      //   type: 'POST',
-      //   url: 'https://docs.google.com/forms/d/e/1FAIpQLScKoPmqx2QVD_bMxFbf_E4SczZzfyFhlS34MsBswu38z4mzRA/formResponse',
-      //   dataType: 'json',
-      //   data: msg,
-      // });
+       $.ajax({
+        type: 'POST',
+        url: 'https://docs.google.com/forms/d/e/1FAIpQLScKoPmqx2QVD_bMxFbf_E4SczZzfyFhlS34MsBswu38z4mzRA/formResponse',
+        dataType: 'json',
+        data: msg,
+      });
+       // Отправка в Telegram
        $.ajax({
          type: 'POST',
          url: 'https://api.telegram.org/bot357106214:AAHodgTmo25b66zg0hgGIx_gmsBvpyHSvdk/sendMessage?chat_id=-183516110&text=У вас новый лид c Rezart Agency мой господин: ' + name_tl + ' | ' + email_tl + ' | ' + phone_tl + ' Продайте ему что-нибудь поскорее!'
