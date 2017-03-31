@@ -868,10 +868,17 @@
     position: relative;
     .card{
       display: inline-block;
+      cursor: pointer;
       text-align: left;
       margin-bottom: 25px;
       max-width: 140px;
       vertical-align: top;
+      &:hover{
+        img{
+          transition: box-shadow .4s;
+          box-shadow: 0 0 10px $main_color;
+        }
+      }
       .name{
         font: 18px $bold_font;
         color: #28292d;

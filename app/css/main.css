@@ -691,10 +691,18 @@
     position: relative; }
     #sec_11 .slide .card {
       display: inline-block;
+      cursor: pointer;
       text-align: left;
       margin-bottom: 25px;
       max-width: 140px;
       vertical-align: top; }
+      #sec_11 .slide .card:hover img {
+        -webkit-transition: -webkit-box-shadow .4s;
+        transition: -webkit-box-shadow .4s;
+        transition: box-shadow .4s;
+        transition: box-shadow .4s, -webkit-box-shadow .4s;
+        -webkit-box-shadow: 0 0 10px #b39c72;
+        box-shadow: 0 0 10px #b39c72; }
       #sec_11 .slide .card .name {
         font: 18px "Gilroy-Bold", Roboto, sans-serif;
         color: #28292d;

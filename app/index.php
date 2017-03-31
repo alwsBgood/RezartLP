@@ -493,7 +493,7 @@
                     <p class="title">Qa for Girl</p>
                     <p class="text">Онлайн курс QA для девушек</p>
                     <!-- <p class="money">Доход с сайта: $ 5 000/год</p> -->
-                    <a class="md-trigger info" data-modal="modal_info">
+                    <a target="_blank" href="http://qagirl.pro/" class="info">
                         <img src="img/sec_06-more_icon.png" alt="">
                     </a>
                     <a class="md-trigger zoom" data-modal="modal_maket">
@@ -508,7 +508,7 @@
                     <p class="title">Java Developer</p>
                     <p class="text">Онлайн курс Java</p>
                     <!-- <p class="money">Доход с сайта: $ 5 000/год</p> -->
-                    <a class="md-trigger info" data-modal="modal_info">
+                    <a target="_blank" href="http://java.new.goit.ua/" class="info">
                         <img src="img/sec_06-more_icon.png" alt="">
                     </a>
                     <a class="md-trigger zoom" data-modal="modal_maket">
@@ -523,7 +523,7 @@
                     <p class="title">Angry Dandy</p>
                     <p class="text">Магазин трендовых мужских <br /> курток в Украине.</p>
                     <!-- <p class="money">Доход с сайта: $ 5 000/год</p> -->
-                    <a class="md-trigger info" data-modal="modal_info">
+                    <a target="_blank" href="http://myjacket.com.ua/" class="info">
                         <img src="img/sec_06-more_icon.png" alt="">
                     </a>
                     <a class="md-trigger zoom" data-modal="modal_maket">
@@ -538,7 +538,7 @@
                     <p class="title">Run Train by Mishcenko</p>
                     <p class="text">Практические советы <br /> по профессиональному бегу.</p>
                     <!-- <p class="money">Доход с сайта: $ 5 000/год</p> -->
-                    <a class="md-trigger info" data-modal="modal_info">
+                    <a target="_blank" href="https://www.behance.net/gallery/47134923/Run-Train-by-Mishcenko" class="info">
                         <img src="img/sec_06-more_icon.png" alt="">
                     </a>
                     <a class="md-trigger zoom" data-modal="modal_maket">
@@ -555,7 +555,7 @@
                     <p class="title">Look Look</p>
                     <p class="text">Студия наращивания ресниц <br /> и ухода за бровями.</p>
                     <!-- <p class="money">Доход с сайта: $ 5 000/год</p> -->
-                    <a class="md-trigger info" data-modal="modal_info">
+                    <a target="_blank" href="http://looklook.com.ua/" class="info">
                         <img src="img/sec_06-more_icon.png" alt="">
                     </a>
                     <a class="md-trigger zoom" data-modal="modal_maket">
@@ -569,7 +569,7 @@
                     <p class="title">Paris Beauty</p>
                     <p class="text">Средства из Франции по уходу <br /> за волосами в домашних условиях.</p>
                     <!-- <p class="money">Доход с сайта: $ 5 000/год</p> -->
-                    <a class="md-trigger info" data-modal="modal_info">
+                    <a target="_blank" href="https://www.behance.net/gallery/36532239/Paris-Beaute" class="info">
                         <img src="img/sec_06-more_icon.png" alt="">
                     </a>
                     <a class="md-trigger zoom" data-modal="modal_maket">
@@ -583,7 +583,7 @@
                     <p class="title">Свадебные Платья</p>
                     <p class="text">Дизайнерские свадебные и вечерние <br /> платья мирового уровня.</p>
                     <!-- <p class="money">Доход с сайта: $ 5 000/год</p> -->
-                    <a class="md-trigger info" data-modal="modal_info">
+                    <a target="_blank" href="https://www.behance.net/gallery/45095199/Wedding-Dresses" class="info">
                         <img src="img/sec_06-more_icon.png" alt="">
                     </a>
                     <a class="md-trigger zoom" data-modal="modal_maket">
@@ -594,10 +594,9 @@
                 <div class="item_06">
                     <img src="img/sec_06-site-8.png" alt="Design">
                     <!-- <a class="md-trigger  site" data-modal="modal_maket">Site name</a> -->
-                    <p class="title">Лишние сантиметры</p>
-                    <p class="text">Клуб здорового образа жизни. <br /> Разработка и полное ведение.</p>
-                    <p class="money">Цена заявки: до 100 руб.</p>
-                    <a class="md-trigger info" data-modal="modal_info">
+                    <p class="title">Сейшельские острова</p>
+                    <p class="text">Уникальный проект, который навсегда изменит <br> ваше предстваление о путешествиях</p>
+                    <a target="_blank" href="https://www.behance.net/gallery/37727463/Seychelles-Travel-Landing" class="info">
                         <img src="img/sec_06-more_icon.png" alt="">
                     </a>
                     <a class="md-trigger zoom" data-modal="modal_maket">
@@ -820,7 +819,7 @@
                 </li>
                 <li class="rotate_block">
                     <p class="text">Построение воронки продаж</p>
-                    <p class="price"><span>от</span> 5000$</p>
+                    <p class="price"><span>от</span> 3750$</p>
                 </li>
                 <li class="rotate_block">
                     <p class="text">Аналитика</p>
