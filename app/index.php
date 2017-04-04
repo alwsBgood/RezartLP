@@ -518,6 +518,94 @@
             </div>
             <div class="grid_6">
                 <div class="item_06">
+                    <img src="img/sec_06-site-9.png" alt="Design">
+                    <!-- <a class="md-trigger site" data-modal="modal_maket">Site name</a> -->
+                    <p class="title">BeautyFest</p>
+                    <p class="text">Первый в Украине <br> beauty-fest</p>
+                    <!-- <p class="money">Доход с сайта: $ 5 000/год</p> -->
+                    <a target="_blank" href="http://beautyfest.com.ua/" class="info">
+                        <img src="img/sec_06-more_icon.png" alt="">
+                    </a>
+                    <a class="md-trigger zoom" data-modal="modal_maket">
+                        <img src="img/sec_06-zoom_icon.png" alt="">
+                    </a>
+                </div>
+            </div>
+            <div class="grid_6">
+                <div class="item_06">
+                    <img src="img/sec_06-site-12.png" alt="Design">
+                    <!-- <a class="md-trigger site" data-modal="modal_maket">Site name</a> -->
+                    <p class="title">Move on Miles</p>
+                    <p class="text">Поиск работы за рубежом.</p>
+                    <!-- <p class="money">Доход с сайта: $ 5 000/год</p> -->
+                    <a target="_blank" href="http://moveonmiles.com/" class="info">
+                        <img src="img/sec_06-more_icon.png" alt="">
+                    </a>
+                    <a class="md-trigger zoom" data-modal="modal_maket">
+                        <img src="img/sec_06-zoom_icon.png" alt="">
+                    </a>
+                </div>
+            </div>
+            <div class="grid_12">
+            <div class="invisible_content">
+
+                <div class="item_06">
+                    <img src="img/sec_06-site-10.png" alt="Design">
+                    <!-- <a class="md-trigger site" data-modal="modal_maket">Site name</a> -->
+                    <p class="title">Procut Kids</p>
+                    <p class="text">Курсы видиомонтажа <br> для детей.</p>
+                    <!-- <p class="money">Доход с сайта: $ 5 000/год</p> -->
+                    <a target="_blank" href="http://kids.procut.com.ua/mc/" class="info">
+                        <img src="img/sec_06-more_icon.png" alt="">
+                    </a>
+                    <a class="md-trigger zoom" data-modal="modal_maket">
+                        <img src="img/sec_06-zoom_icon.png" alt="">
+                    </a>
+                </div>
+
+                <div class="item_06">
+                    <img src="img/sec_06-site-11.png" alt="Design">
+                    <!-- <a class="md-trigger site" data-modal="modal_maket">Site name</a> -->
+                    <p class="title">Chopper</p>
+                    <p class="text">Магазин настоящей байкерской обуви.</p>
+                    <!-- <p class="money">Доход с сайта: $ 5 000/год</p> -->
+                    <a target="_blank" href="http://yurvov.com.ua/bgood/chopper/" class="info">
+                        <img src="img/sec_06-more_icon.png" alt="">
+                    </a>
+                    <a class="md-trigger zoom" data-modal="modal_maket">
+                        <img src="img/sec_06-zoom_icon.png" alt="">
+                    </a>
+                </div>
+
+                <div class="item_06">
+                    <img src="img/sec_06-site-13.png" alt="Design">
+                    <!-- <a class="md-trigger site" data-modal="modal_maket">Site name</a> -->
+                    <p class="title">Artistream</p>
+                    <p class="text">Профессиональная фотосъемка <br /> в Москве.</p>
+                    <!-- <p class="money">Доход с сайта: $ 5 000/год</p> -->
+                    <a target="_blank" href="http://yurvov.com.ua/mndev/artistream.ru/" class="info">
+                        <img src="img/sec_06-more_icon.png" alt="">
+                    </a>
+                    <a class="md-trigger zoom" data-modal="modal_maket">
+                        <img src="img/sec_06-zoom_icon.png" alt="">
+                    </a>
+                </div>
+
+                <div class="item_06">
+                    <img src="img/sec_06-site-14.png" alt="Design">
+                    <!-- <a class="md-trigger site" data-modal="modal_maket">Site name</a> -->
+                    <p class="title">Bjorgwood</p>
+                    <p class="text">Магазин европейской мебели.</p>
+                    <!-- <p class="money">Доход с сайта: $ 5 000/год</p> -->
+                    <a target="_blank" href="http://yurvov.com.ua/mndev/bjorgwood.com/" class="info">
+                        <img src="img/sec_06-more_icon.png" alt="">
+                    </a>
+                    <a class="md-trigger zoom" data-modal="modal_maket">
+                        <img src="img/sec_06-zoom_icon.png" alt="">
+                    </a>
+                </div>
+
+                <div class="item_06">
                     <img src="img/sec_06-site-3.png" alt="Design">
                     <!-- <a class="md-trigger site" data-modal="modal_maket">Site name</a> -->
                     <p class="title">Angry Dandy</p>
@@ -530,8 +618,7 @@
                         <img src="img/sec_06-zoom_icon.png" alt="">
                     </a>
                 </div>
-            </div>
-            <div class="grid_6">
+
                 <div class="item_06">
                     <img src="img/sec_06-site-4.png" alt="Design">
                     <!-- <a class="md-trigger site" data-modal="modal_maket">Site name</a> -->
@@ -545,9 +632,6 @@
                         <img src="img/sec_06-zoom_icon.png" alt="">
                     </a>
                 </div>
-            </div>
-            <div class="grid_12">
-            <div class="invisible_content">
 
                 <div class="item_06">
                     <img src="img/sec_06-site-5.png" alt="Design">
@@ -1207,7 +1291,9 @@
                 </div>
             </div>
             <div class="grid_3">
-                <a class="logo_rezart" target="_blank" href="http://rezart.com.ua/"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 792"><path d="M216.8 247.3c150.2 0 147.2 0 156.1 0 50.4 0 100.2 42.1 100.4 102.3 0.1 56.2-43.8 91.1-72.4 98 0.9 0 38.4 66.8 38.4 66.8l172.2-291.2 179.5 305.3c5.4 9.9 8.8 15.6 11.3 22.7 5.3 15.3-8.8 25.6-18.7 25.7 -9.7 0.1-14.6-3.6-24.4-8.9l-108.1-62 -39.9-74.4 108.4 63L610.6 310.8c0 0-139.3 237.5-144 244.6 -8.1 12.1-13.4 21.6-28.4 21.6 -14.6 0-21.4-9.6-29-21.3 -1.7-3.4-89.8-148.9-89.8-148.9 32.1 0.1 28.9 0.1 54.8 0.1 21.1 0 54-18.6 54-55.7 0-22.2-17.1-56.4-57.9-56.4 -45.2 0-126.3 0-126.3 0L216.8 247.3z"/><path d="M217.1 351l47.7 83.4 -0.3 119.8c0 0 0.5 22.5-24.2 22.9 -0.3-0.3-23.7 1.8-23.7-22.2C216.7 530.8 217.1 351 217.1 351z"/><path d="M264.9 434.4l-0.1 119c0 0 0.4 23.3-24.3 23.7"/></svg></a>
+                <a class="logo_rezart" target="_blank" href="http://rezart.agency/am/"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 792"><path d="M216.8 247.3c150.2 0 147.2 0 156.1 0 50.4 0 100.2 42.1 100.4 102.3 0.1 56.2-43.8 91.1-72.4 98 0.9 0 38.4 66.8 38.4 66.8l172.2-291.2 179.5 305.3c5.4 9.9 8.8 15.6 11.3 22.7 5.3 15.3-8.8 25.6-18.7 25.7 -9.7 0.1-14.6-3.6-24.4-8.9l-108.1-62 -39.9-74.4 108.4 63L610.6 310.8c0 0-139.3 237.5-144 244.6 -8.1 12.1-13.4 21.6-28.4 21.6 -14.6 0-21.4-9.6-29-21.3 -1.7-3.4-89.8-148.9-89.8-148.9 32.1 0.1 28.9 0.1 54.8 0.1 21.1 0 54-18.6 54-55.7 0-22.2-17.1-56.4-57.9-56.4 -45.2 0-126.3 0-126.3 0L216.8 247.3z"/><path d="M217.1 351l47.7 83.4 -0.3 119.8c0 0 0.5 22.5-24.2 22.9 -0.3-0.3-23.7 1.8-23.7-22.2C216.7 530.8 217.1 351 217.1 351z"/><path d="M264.9 434.4l-0.1 119c0 0 0.4 23.3-24.3 23.7"/></svg>
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 792"><path d="M216.8 247.3c150.2 0 147.2 0 156.1 0 50.4 0 100.2 42.1 100.4 102.3 0.1 56.2-43.8 91.1-72.4 98 0.9 0 38.4 66.8 38.4 66.8l172.2-291.2 179.5 305.3c5.4 9.9 8.8 15.6 11.3 22.7 5.3 15.3-8.8 25.6-18.7 25.7 -9.7 0.1-14.6-3.6-24.4-8.9l-108.1-62 -39.9-74.4 108.4 63L610.6 310.8c0 0-139.3 237.5-144 244.6 -8.1 12.1-13.4 21.6-28.4 21.6 -14.6 0-21.4-9.6-29-21.3 -1.7-3.4-89.8-148.9-89.8-148.9 32.1 0.1 28.9 0.1 54.8 0.1 21.1 0 54-18.6 54-55.7 0-22.2-17.1-56.4-57.9-56.4 -45.2 0-126.3 0-126.3 0L216.8 247.3z"/><path d="M217.1 351l47.7 83.4 -0.3 119.8c0 0 0.5 22.5-24.2 22.9 -0.3-0.3-23.7 1.8-23.7-22.2C216.7 530.8 217.1 351 217.1 351z"/><path d="M264.9 434.4l-0.1 119c0 0 0.4 23.3-24.3 23.7"/></svg>
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 792"><path d="M216.8 247.3c150.2 0 147.2 0 156.1 0 50.4 0 100.2 42.1 100.4 102.3 0.1 56.2-43.8 91.1-72.4 98 0.9 0 38.4 66.8 38.4 66.8l172.2-291.2 179.5 305.3c5.4 9.9 8.8 15.6 11.3 22.7 5.3 15.3-8.8 25.6-18.7 25.7 -9.7 0.1-14.6-3.6-24.4-8.9l-108.1-62 -39.9-74.4 108.4 63L610.6 310.8c0 0-139.3 237.5-144 244.6 -8.1 12.1-13.4 21.6-28.4 21.6 -14.6 0-21.4-9.6-29-21.3 -1.7-3.4-89.8-148.9-89.8-148.9 32.1 0.1 28.9 0.1 54.8 0.1 21.1 0 54-18.6 54-55.7 0-22.2-17.1-56.4-57.9-56.4 -45.2 0-126.3 0-126.3 0L216.8 247.3z"/><path d="M217.1 351l47.7 83.4 -0.3 119.8c0 0 0.5 22.5-24.2 22.9 -0.3-0.3-23.7 1.8-23.7-22.2C216.7 530.8 217.1 351 217.1 351z"/><path d="M264.9 434.4l-0.1 119c0 0 0.4 23.3-24.3 23.7"/></svg></a>
                 <a class="footer-fire" target="_blank" href="http://willcatchfire.com/"></a>
             </div>
         </div>

@@ -1111,8 +1111,59 @@
   }
 }
 
+@mixin svgGlitch($name, $intensity, $fillColor, $background, $fillHighlight1, $fillHighlight2, $width, $height, $top, $left) {
+
+  $steps: $intensity;
+
+  // Ensure the @keyframes are generated at the root level
+  @at-root {
+    // We need two different ones
+    @for $i from 1 through 2 {
+      @keyframes #{$name}-anim-#{$i} {
+        @for $i from 0 through $steps {
+          #{percentage($i*(1/$steps))} {
+            clip: rect(
+              (random($height)-10)+px,
+              $width+px,
+              (random($height)+10)+px,
+              0
+            );
+          }
+        }
+      }
+    }
+  }
+
+  svg {
+    position: absolute;
+    top: $top+px;
+    left: $left+px;
+    fill: $fillColor;
+    background: $background;
+    width: $width+px;
+    height: $height+px;
+    z-index: 20;
+  }
+  svg:nth-child(2),
+  svg:nth-child(3) {
+    clip: rect(0, 0, 0, 0); 
+  }
+  svg:nth-child(2) {
+    fill: $fillHighlight1;
+    left: ($left - 1) + px;
+    animation: #{$name}-anim-1 2s infinite linear alternate-reverse;
+  }
+  svg:nth-child(3) {
+    fill: $fillHighlight2;
+    left: ($left + 1) + px;
+    animation: #{$name}-anim-2 3s infinite linear alternate-reverse;
+  }
+}
+
+
+
 footer{
-  padding: 15px 0 15px;
+  padding: 15px 0 25px;
   background-color: #202020;
   .politics{
     margin-top: 17px;
@@ -1123,23 +1174,25 @@ footer{
     a:hover{color: $main_color;}
     a+a{margin-left: 10px;}
   }
+
   .logo_rezart{
     margin-top: -10px;
     margin-bottom: -10px;
     width: 80px;
-    // margin-right: 20px;
     float: right;
-    svg{
-      width: 80px;
-      fill: #fff;
-      border-radius: 50%;
-      transition: .3s;
-      &:hover{
+    position: relative;
+    @include svgGlitch(logo_glitch, 20, #fff, #202020, #fff, #fff, 80, 64, 0, 0)
+    &:hover{
+      svg{
+        transition: .4s;
         fill: $main_color;
       }
     }
   }
 }
+
+
+
 
 /* ANIMATIONS*/
 

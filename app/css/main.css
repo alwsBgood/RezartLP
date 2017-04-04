@@ -878,7 +878,7 @@
       color: #fff; }
 
 footer {
-  padding: 15px 0 15px;
+  padding: 15px 0 25px;
   background-color: #202020; }
   footer .politics {
     margin-top: 17px; }
@@ -893,16 +893,210 @@ footer {
     margin-top: -10px;
     margin-bottom: -10px;
     width: 80px;
-    float: right; }
+    float: right;
+    position: relative; }
+
+@-webkit-keyframes logo_glitch-anim-1 {
+  0% {
+    clip: rect(48px, 80px, 67px, 0); }
+  5% {
+    clip: rect(35px, 80px, 40px, 0); }
+  10% {
+    clip: rect(40px, 80px, 12px, 0); }
+  15% {
+    clip: rect(11px, 80px, 64px, 0); }
+  20% {
+    clip: rect(41px, 80px, 63px, 0); }
+  25% {
+    clip: rect(19px, 80px, 24px, 0); }
+  30% {
+    clip: rect(19px, 80px, 13px, 0); }
+  35% {
+    clip: rect(32px, 80px, 61px, 0); }
+  40% {
+    clip: rect(18px, 80px, 30px, 0); }
+  45% {
+    clip: rect(-8px, 80px, 38px, 0); }
+  50% {
+    clip: rect(-4px, 80px, 30px, 0); }
+  55% {
+    clip: rect(48px, 80px, 42px, 0); }
+  60% {
+    clip: rect(-7px, 80px, 18px, 0); }
+  65% {
+    clip: rect(49px, 80px, 19px, 0); }
+  70% {
+    clip: rect(-7px, 80px, 17px, 0); }
+  75% {
+    clip: rect(-1px, 80px, 67px, 0); }
+  80% {
+    clip: rect(10px, 80px, 18px, 0); }
+  85% {
+    clip: rect(10px, 80px, 49px, 0); }
+  90% {
+    clip: rect(12px, 80px, 49px, 0); }
+  95% {
+    clip: rect(7px, 80px, 67px, 0); }
+  100% {
+    clip: rect(0px, 80px, 58px, 0); } }
+
+@keyframes logo_glitch-anim-1 {
+  0% {
+    clip: rect(48px, 80px, 67px, 0); }
+  5% {
+    clip: rect(35px, 80px, 40px, 0); }
+  10% {
+    clip: rect(40px, 80px, 12px, 0); }
+  15% {
+    clip: rect(11px, 80px, 64px, 0); }
+  20% {
+    clip: rect(41px, 80px, 63px, 0); }
+  25% {
+    clip: rect(19px, 80px, 24px, 0); }
+  30% {
+    clip: rect(19px, 80px, 13px, 0); }
+  35% {
+    clip: rect(32px, 80px, 61px, 0); }
+  40% {
+    clip: rect(18px, 80px, 30px, 0); }
+  45% {
+    clip: rect(-8px, 80px, 38px, 0); }
+  50% {
+    clip: rect(-4px, 80px, 30px, 0); }
+  55% {
+    clip: rect(48px, 80px, 42px, 0); }
+  60% {
+    clip: rect(-7px, 80px, 18px, 0); }
+  65% {
+    clip: rect(49px, 80px, 19px, 0); }
+  70% {
+    clip: rect(-7px, 80px, 17px, 0); }
+  75% {
+    clip: rect(-1px, 80px, 67px, 0); }
+  80% {
+    clip: rect(10px, 80px, 18px, 0); }
+  85% {
+    clip: rect(10px, 80px, 49px, 0); }
+  90% {
+    clip: rect(12px, 80px, 49px, 0); }
+  95% {
+    clip: rect(7px, 80px, 67px, 0); }
+  100% {
+    clip: rect(0px, 80px, 58px, 0); } }
+
+@-webkit-keyframes logo_glitch-anim-2 {
+  0% {
+    clip: rect(-8px, 80px, 47px, 0); }
+  5% {
+    clip: rect(24px, 80px, 29px, 0); }
+  10% {
+    clip: rect(46px, 80px, 44px, 0); }
+  15% {
+    clip: rect(0px, 80px, 20px, 0); }
+  20% {
+    clip: rect(46px, 80px, 34px, 0); }
+  25% {
+    clip: rect(-2px, 80px, 54px, 0); }
+  30% {
+    clip: rect(31px, 80px, 25px, 0); }
+  35% {
+    clip: rect(21px, 80px, 51px, 0); }
+  40% {
+    clip: rect(0px, 80px, 62px, 0); }
+  45% {
+    clip: rect(-2px, 80px, 14px, 0); }
+  50% {
+    clip: rect(27px, 80px, 63px, 0); }
+  55% {
+    clip: rect(-1px, 80px, 33px, 0); }
+  60% {
+    clip: rect(23px, 80px, 60px, 0); }
+  65% {
+    clip: rect(19px, 80px, 17px, 0); }
+  70% {
+    clip: rect(-2px, 80px, 45px, 0); }
+  75% {
+    clip: rect(54px, 80px, 11px, 0); }
+  80% {
+    clip: rect(28px, 80px, 69px, 0); }
+  85% {
+    clip: rect(-2px, 80px, 34px, 0); }
+  90% {
+    clip: rect(28px, 80px, 52px, 0); }
+  95% {
+    clip: rect(8px, 80px, 38px, 0); }
+  100% {
+    clip: rect(46px, 80px, 64px, 0); } }
+
+@keyframes logo_glitch-anim-2 {
+  0% {
+    clip: rect(-8px, 80px, 47px, 0); }
+  5% {
+    clip: rect(24px, 80px, 29px, 0); }
+  10% {
+    clip: rect(46px, 80px, 44px, 0); }
+  15% {
+    clip: rect(0px, 80px, 20px, 0); }
+  20% {
+    clip: rect(46px, 80px, 34px, 0); }
+  25% {
+    clip: rect(-2px, 80px, 54px, 0); }
+  30% {
+    clip: rect(31px, 80px, 25px, 0); }
+  35% {
+    clip: rect(21px, 80px, 51px, 0); }
+  40% {
+    clip: rect(0px, 80px, 62px, 0); }
+  45% {
+    clip: rect(-2px, 80px, 14px, 0); }
+  50% {
+    clip: rect(27px, 80px, 63px, 0); }
+  55% {
+    clip: rect(-1px, 80px, 33px, 0); }
+  60% {
+    clip: rect(23px, 80px, 60px, 0); }
+  65% {
+    clip: rect(19px, 80px, 17px, 0); }
+  70% {
+    clip: rect(-2px, 80px, 45px, 0); }
+  75% {
+    clip: rect(54px, 80px, 11px, 0); }
+  80% {
+    clip: rect(28px, 80px, 69px, 0); }
+  85% {
+    clip: rect(-2px, 80px, 34px, 0); }
+  90% {
+    clip: rect(28px, 80px, 52px, 0); }
+  95% {
+    clip: rect(8px, 80px, 38px, 0); }
+  100% {
+    clip: rect(46px, 80px, 64px, 0); } }
     footer .logo_rezart svg {
-      width: 80px;
+      position: absolute;
+      top: 0px;
+      left: 0px;
       fill: #fff;
-      -webkit-border-radius: 50%;
-      border-radius: 50%;
-      -webkit-transition: .3s;
-      transition: .3s; }
-      footer .logo_rezart svg:hover {
-        fill: #b39c72; }
+      background: #202020;
+      width: 80px;
+      height: 64px;
+      z-index: 20; }
+    footer .logo_rezart svg:nth-child(2),
+    footer .logo_rezart svg:nth-child(3) {
+      clip: rect(0, 0, 0, 0); }
+    footer .logo_rezart svg:nth-child(2) {
+      fill: #fff;
+      left: -1px;
+      -webkit-animation: logo_glitch-anim-1 2s infinite linear alternate-reverse;
+      animation: logo_glitch-anim-1 2s infinite linear alternate-reverse; }
+    footer .logo_rezart svg:nth-child(3) {
+      fill: #fff;
+      left: 1px;
+      -webkit-animation: logo_glitch-anim-2 3s infinite linear alternate-reverse;
+      animation: logo_glitch-anim-2 3s infinite linear alternate-reverse; }
+    footer .logo_rezart:hover svg {
+      -webkit-transition: .4s;
+      transition: .4s;
+      fill: #b39c72; }
 
 /* ANIMATIONS*/
 @-webkit-keyframes arrowDown {
