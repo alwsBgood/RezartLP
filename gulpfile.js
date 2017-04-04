@@ -48,7 +48,8 @@ gulp.task('scripts', function() {
     './app/libs/masked/mask.js',
     './app/libs/lightbox2/lightbox.min.js',
 		'./app/libs/plugins-scroll/plugins-scroll.js',
-    './app/libs/slick/slick.min.js'
+    './app/libs/slick/slick.min.js',
+    './app/libs/noUiSlider.9.2.0/nouislider.js'
 		])
 		.pipe(concat('libs.js'))
 		.pipe(gulp.dest('./app/js/'));

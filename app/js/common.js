@@ -199,112 +199,141 @@ $('.md-overlay').click(function() {
 
 // Calculator
 
+var slider_count = document.getElementById('count');
 
-jQuery(function(){
-
-    calculatorLP();
-
-function calculatorLP(){
-    function numbReg(){
-        jQuery(".numb-reg").each(function(){
-            var reg = /(?=\B(?:\d{3})+(?!\d))/g;
-            var text = jQuery(this).text();
-            jQuery(this).text(text.replace(reg, ' '));
-        });
-    }
-    numbReg();
-
-    jQuery("#count").slider({
-        range: "min",
-        min: 0,
-        max: 500,
-        value: 100,
-        step: 5,
-        slide: function( event, ui ) {
-
-            jQuery( "#showCount" ).text(ui.value).attr("data-count", ui.value);
-
-
-            var sum = Number(ui.value * (jQuery( "#conv" ).slider( "value" ) / 100) * jQuery( "#money" ).slider( "value" )).toFixed() * 0.7;
-            sum = sum.toFixed();
-            var sumDay = sum + "$";
-            var sumMonth = sum * 9 + "$";
-            var ordersDay = ui.value * (jQuery( "#conv" ).slider( "value" ) / 100);
-
-            jQuery("#moneyDay").text(sumDay);
-            jQuery("#moneyMonth").text(sumMonth);
-            jQuery("#ordersDay").text(ordersDay.toFixed());
-            numbReg();
-
-            jQuery('.sumDay').val(sumDay) ;
-            jQuery('.sumMonth').val(sumMonth) ;
-            jQuery('.ordersDay').val(ordersDay) ;
-
-        },
-        change: function( event, ui ){
-            jQuery( "#valCount" ).val(jQuery( "#count" ).slider( "value" ));
-
-            jQuery("#calcSum").text();
-        }
-    });
-
-    jQuery("#conv").slider({
-        range: "min",
-        min: 1,
-        max: 75,
-        value: 30,
-        slide: function( event, ui ) {
-            jQuery( "#showConv" ).text(ui.value).attr("data-conv", ui.value);
-
-            var sum = Number((ui.value  / 100) * jQuery( "#count" ).slider( "value" ) * jQuery( "#money" ).slider( "value" )).toFixed() * 0.7;
-            sum = sum.toFixed();
-            var sumDay = sum + "$";
-            var sumMonth = sum * 30 + "$";
-            var ordersDay = (ui.value / 100) * jQuery( "#count" ).slider( "value" );
-
-            jQuery("#moneyDay").text(sumDay);
-            jQuery("#moneyMonth").text(sumMonth);
-            jQuery("#ordersDay").text(ordersDay.toFixed());
-            numbReg();
-
-        },
-        change: function( event, ui ){
-            jQuery( "#valConv" ).val(jQuery( "#conv" ).slider( "value" ));
-            jQuery('.sumDay').val() = sumDay;
-            jQuery('.sumMonth').val() = sumMonth;
-            jQuery('.ordersDay').val() = ordersDay;
-        }
-    });
-
-    jQuery("#money").slider({
-        range: "min",
-        min: 0,
-        max: 5000,
-        value: 200,
-        step: 10,
-        slide: function( event, ui ) {
-            jQuery( "#showMoney" ).text(ui.value).attr("data-money", ui.value);
-
-            var sum = Number(ui.value * (jQuery( "#conv" ).slider( "value" ) / 100) * jQuery( "#count" ).slider( "value" )).toFixed() * 0.7;
-            sum = sum.toFixed();
-            var sumDay = sum + "$";
-            var sumMonth = sum * 30 + "$";
-            var ordersDay = jQuery( "#count" ).slider( "value" ) * (jQuery( "#conv" ).slider( "value" ) / 100);
-            jQuery("#moneyDay").text(sumDay);
-            jQuery("#moneyMonth").text(sumMonth);
-            jQuery("#ordersDay").text(ordersDay.toFixed());
-            numbReg();
-
-        },
-        change: function( event, ui ){
-            jQuery( "#valMoney" ).val(jQuery( "#money" ).slider( "value" ));
-            jQuery('.sumDay').val() = sumDay;
-            jQuery('.sumMonth').val() = sumMonth;
-            jQuery('.ordersDay').val() = ordersDay;
-        }
-    });
-    }
+noUiSlider.create(slider_count, {
+ start: [100],
+ connect: [true, false],
+ step: 5,
+ range: {
+   'min': 0,
+   'max': 500
+ },
 });
+
+
+// =====================================
+
+var slider_conv = document.getElementById('conv');
+
+noUiSlider.create(slider_conv, {
+ start: [3],
+ connect: [true, false],
+ step: 1,
+ range: {
+   'min': 1,
+   'max': 75
+ },
+});
+
+
+// ===================================
+
+var slider_money = document.getElementById('money');
+
+noUiSlider.create(slider_money, {
+ start: [500],
+ connect: [true, false],
+ step: 10,
+ range: {
+   'min': 0,
+   'max': 5000
+ },
+});
+
+
+
+// Поля для ввода значений
+
+var moneyDayValue = document.getElementById('moneyDay');
+var moneyMonthValue = document.getElementById('moneyMonth');
+var ordersDayValue = document.getElementById('ordersDay');
+
+var sliderCountValueElement = document.getElementById('showCount');
+var sliderConvValueElement = document.getElementById('showConv');
+var sliderMoneyValueElement = document.getElementById('showMoney');
+
+
+// Обработчик слайдера (кол-во людей)
+
+slider_count.noUiSlider.on('update', function( values, handle ) {
+  var fixedValues = Number(values[handle]).toFixed();
+  sliderCountValueElement.innerHTML = fixedValues;
+
+  var sliderCountValue = +Number(slider_count.noUiSlider.get()).toFixed();
+  var sliderConvValue = +Number(slider_conv.noUiSlider.get()).toFixed();
+  var sliderMoneyValue = +Number(slider_money.noUiSlider.get()).toFixed();
+
+  var sum = Number(sliderCountValue * (sliderConvValue/100)*sliderMoneyValue * 0.7).toFixed();
+  var sumDay = sum + "$";
+  var sumMonth = sum * 30 + "$";
+
+  var ordersDay = Number(sliderCountValue * (sliderConvValue/100)).toFixed();
+
+  moneyDayValue.innerHTML = sumDay;
+  moneyMonthValue.innerHTML = sumMonth;
+  ordersDayValue.innerHTML = ordersDay;
+
+  $('.sumDay').val(sumDay) ;
+  $('.sumMonth').val(sumMonth) ;
+  $('.ordersDay').val(ordersDay) ;
+
+});
+
+
+// Обработчик слайдера (конверсия)
+
+slider_conv.noUiSlider.on('update', function( values, handle ) {
+  var fixedValues = Number(values[handle]).toFixed();
+  sliderConvValueElement.innerHTML = fixedValues;
+
+  var sliderCountValue = +Number(slider_count.noUiSlider.get()).toFixed();
+  var sliderConvValue = +Number(slider_conv.noUiSlider.get()).toFixed();
+  var sliderMoneyValue = +Number(slider_money.noUiSlider.get()).toFixed();
+
+  var sum = Number((sliderConvValue/100) * sliderCountValue * sliderMoneyValue * 0.7).toFixed();
+  var sumDay = sum + "$";
+  var sumMonth = sum * 30 + "$";
+
+  var ordersDay = Number((sliderConvValue/100) * sliderCountValue).toFixed();
+
+  moneyDayValue.innerHTML = sumDay;
+  moneyMonthValue.innerHTML = sumMonth;
+  ordersDayValue.innerHTML = ordersDay;
+
+  $('.sumDay').val(sumDay) ;
+  $('.sumMonth').val(sumMonth) ;
+  $('.ordersDay').val(ordersDay) ;
+
+});
+
+
+// Обработчик слайдера (деньги)
+
+slider_money.noUiSlider.on('update', function( values, handle ) {
+  var fixedValues = Number(values[handle]).toFixed();
+  sliderMoneyValueElement.innerHTML = fixedValues;
+
+  var sliderCountValue = +Number(slider_count.noUiSlider.get()).toFixed();
+  var sliderConvValue = +Number(slider_conv.noUiSlider.get()).toFixed();
+  var sliderMoneyValue = +Number(slider_money.noUiSlider.get()).toFixed();
+
+  var sum = Number(sliderMoneyValue * (sliderConvValue/100) * sliderCountValue * 0.7).toFixed();
+  var sumDay = sum + "$";
+  var sumMonth = sum * 30 + "$";
+
+  var ordersDay = Number((sliderConvValue/100) * sliderCountValue).toFixed();
+
+  moneyDayValue.innerHTML = sumDay;
+  moneyMonthValue.innerHTML = sumMonth;
+  ordersDayValue.innerHTML = ordersDay;
+
+  $('.sumDay').val(sumDay) ;
+  $('.sumMonth').val(sumMonth) ;
+  $('.ordersDay').val(ordersDay) ;
+
+});
+
 
 
 
