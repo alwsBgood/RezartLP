@@ -337,11 +337,10 @@ slider_money.noUiSlider.on('update', function( values, handle ) {
 
 
 
-
 //  INPUT TEL MASK
 
 jQuery(function($){
- $("input[type='tel']").mask("(999) 999-9999");
+ $("input[type='tel']").mask("+38 (999) 999-9999");
 });
 
 

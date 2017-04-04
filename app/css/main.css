@@ -1623,7 +1623,15 @@ input:-ms-input-placeholder {
   #sec_13 a {
     font-size: 20px; }
   h2 {
-    font-size: 40px; } }
+    font-size: 40px; }
+  .noUi-horizontal .noUi-handle,
+  .noUi-vertical .noUi-handle {
+    width: 24px;
+    height: 24px;
+    left: -13px;
+    top: -10px; }
+  .noUi-target.noUi-horizontal .noUi-active .noUi-tooltip {
+    left: 10px; } }
 
 @media (min-width: 761px) and (max-width: 980px) {
   h2 {
