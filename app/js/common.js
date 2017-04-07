@@ -84,6 +84,14 @@ $(function() {
         dataType: 'json',
         data: msg,
       });
+       $.ajax({
+         type: "POST",
+         url:"amo/amocontactlist.php",
+         data: msg,
+         success: function() {
+           console.log('amo ok!');
+         }
+       });
        // Отправка в Telegram
        $.ajax({
          type: 'POST',
