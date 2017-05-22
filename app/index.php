@@ -790,7 +790,7 @@
             <div class="small_sertif">
             <div class="slide">
                 <p class="slide_number"><span class="current_slide text--gold title">1</span>/2</p>
-                <a href="img/sert-2.png" data-lightbox="sertif-set"><img src="img/sec_07-sert-2.png" alt=""></a>
+                <a href="img/sert-2.jpg" data-lightbox="sertif-set"><img src="img/sec_07-sert-2.png" alt=""></a>
             </div>
             <div class="slide">
                 <p class="slide_number"><span class="current_slide text--gold title">2</span>/2</p>
@@ -801,7 +801,7 @@
         <div class="grid_4">
         <div class="big_sertif">
             <div class="slide"><a href="img/sert-3.png" data-lightbox="sertif-set"><img src="img/sec_07-sert-3.png" alt=""></a></div>
-            <div class="slide"><a href="img/sert-1.png" data-lightbox="sertif-set"><img src="img/sec_07-sert-1.png" alt=""></a></div>
+            <div class="slide"><a href="img/sert-1.jpg" data-lightbox="sertif-set"><img src="img/sec_07-sert-1.png" alt=""></a></div>
         </div>
             <div class="item_07-7">
                 <div class="wrap">
@@ -1701,7 +1701,7 @@
         ]};!function(t,n,r){"use strict";var c=function(t){if("[object Array]"!==Object.prototype.toString.call(t))return!1;for(var r=0;r<t.length;r++){var c=n.createElement("script"),e=t[r];c.src=e.src,c.async=e.async,n.body.appendChild(c)}return!0};t.addEventListener?t.addEventListener("load",function(){c(r.scripts);},!1):t.attachEvent?t.attachEvent("onload",function(){c(r.scripts)}):t.onload=function(){c(r.scripts)}}(window,document,scr);
     </script>
 
-<script type="text/javascript"> (function (d, w, c) { (w[c] = w[c] || []).push(function() { try { w.yaCounter43002724 = new Ya.Metrika({ id:43002724, clickmap:true, trackLinks:true, accurateTrackBounce:true, webvisor:true, trackHash:true }); } catch(e) { } }); var n = d.getElementsByTagName("script")[0], s = d.createElement("script"), f = function () { n.parentNode.insertBefore(s, n); }; s.type = "text/javascript"; s.async = true; s.src = "https://mc.yandex.ru/metrika/watch.js"; if (w.opera == "[object Opera]") { d.addEventListener("DOMContentLoaded", f, false); } else { f(); } })(document, window, "yandex_metrika_callbacks"); </script> <noscript><div><img src="https://mc.yandex.ru/watch/43002724" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+<script type="text/javascript"> (function (d, w,f c) { (w[c] = w[c] || []).push(function() { try { w.yaCounter43002724 = new Ya.Metrika({ id:43002724, clickmap:true, trackLinks:true, accurateTrackBounce:true, webvisor:true, trackHash:true }); } catch(e) { } }); var n = d.getElementsByTagName("script")[0], s = d.createElement("script"), f = function () { n.parentNode.insertBefore(s, n); }; s.type = "text/javascript"; s.async = true; s.src = "https://mc.yandex.ru/metrika/watch.js"; if (w.opera == "[object Opera]") { d.addEventListener("DOMContentLoaded", f, false); } else { f(); } })(document, window, "yandex_metrika_callbacks"); </script> <noscript><div><img src="https://mc.yandex.ru/watch/43002724" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
 
 <!-- BEGIN JIVOSITE CODE {literal} -->
 <script type='text/javascript'>
