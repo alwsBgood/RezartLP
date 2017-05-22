@@ -488,7 +488,7 @@
 
             <div class="grid_6">
                 <div class="item_06">
-                    <img src="img/sec_06-site-1.png" alt="Design">
+                    <a target="_blank" href="http://qagirl.pro/"><img src="img/sec_06-site-1.png" alt="Design"></a>
                     <!-- <a class="md-trigger site" data-modal="modal_maket">Site name</a> -->
                     <p class="title">Qa for Girl</p>
                     <p class="text">Онлайн курс QA для девушек</p>
@@ -503,7 +503,8 @@
             </div>
             <div class="grid_6">
                 <div class="item_06">
-                    <img src="img/sec_06-site-2.png" alt="Design">
+
+                    <a target="_blank" href="http://java.new.goit.ua/"><img src="img/sec_06-site-2.png" alt="Design"></a>
                     <!-- <a class="md-trigger site" data-modal="modal_maket">Site name</a> -->
                     <p class="title">Java Developer</p>
                     <p class="text">Онлайн курс Java</p>
@@ -518,7 +519,9 @@
             </div>
             <div class="grid_6">
                 <div class="item_06">
-                    <img src="img/sec_06-site-9.png" alt="Design">
+                    <a target="_blank" href="http://beautyfest.com.ua/">
+                        <img src="img/sec_06-site-9.png" alt="Design">
+                    </a>
                     <!-- <a class="md-trigger site" data-modal="modal_maket">Site name</a> -->
                     <p class="title">BeautyFest</p>
                     <p class="text">Первый в Украине <br> beauty-fest</p>
@@ -533,10 +536,12 @@
             </div>
             <div class="grid_6">
                 <div class="item_06">
+                <a target="_blank" href="http://moveonmiles.com/">
                     <img src="img/sec_06-site-12.png" alt="Design">
+                </a>
                     <!-- <a class="md-trigger site" data-modal="modal_maket">Site name</a> -->
                     <p class="title">Move on Miles</p>
-                    <p class="text">Поиск работы за рубежом.</p>
+                    <p class="text">Возможности для разработчиков из Украины.</p>
                     <!-- <p class="money">Доход с сайта: $ 5 000/год</p> -->
                     <a target="_blank" href="http://moveonmiles.com/" class="info">
                         <img src="img/sec_06-more_icon.png" alt="">
@@ -550,7 +555,9 @@
             <div class="invisible_content">
 
                 <div class="item_06">
+                <a target="_blank" href="http://kids.procut.com.ua/mc/">
                     <img src="img/sec_06-site-10.png" alt="Design">
+                </a>
                     <!-- <a class="md-trigger site" data-modal="modal_maket">Site name</a> -->
                     <p class="title">Procut Kids</p>
                     <p class="text">Курсы видиомонтажа <br> для детей.</p>
@@ -563,27 +570,29 @@
                     </a>
                 </div>
 
-                <div class="item_06">
+<!--                 <div class="item_06">
                     <img src="img/sec_06-site-11.png" alt="Design">
-                    <!-- <a class="md-trigger site" data-modal="modal_maket">Site name</a> -->
+
                     <p class="title">Chopper</p>
                     <p class="text">Магазин настоящей байкерской обуви.</p>
-                    <!-- <p class="money">Доход с сайта: $ 5 000/год</p> -->
+
                     <a target="_blank" href="http://yurvov.com.ua/bgood/chopper/" class="info">
                         <img src="img/sec_06-more_icon.png" alt="">
                     </a>
                     <a class="md-trigger zoom" data-modal="modal_maket">
                         <img src="img/sec_06-zoom_icon.png" alt="">
                     </a>
-                </div>
+                </div> -->
 
                 <div class="item_06">
+                <a target="_blank" href="http://rezart.agency/portfolio/artistream.ru/">
                     <img src="img/sec_06-site-13.png" alt="Design">
+                </a>
                     <!-- <a class="md-trigger site" data-modal="modal_maket">Site name</a> -->
                     <p class="title">Artistream</p>
                     <p class="text">Профессиональная фотосъемка <br /> в Москве.</p>
                     <!-- <p class="money">Доход с сайта: $ 5 000/год</p> -->
-                    <a target="_blank" href="http://yurvov.com.ua/mndev/artistream.ru/" class="info">
+                    <a target="_blank" href="http://rezart.agency/portfolio/artistream.ru/" class="info">
                         <img src="img/sec_06-more_icon.png" alt="">
                     </a>
                     <a class="md-trigger zoom" data-modal="modal_maket">
@@ -592,12 +601,14 @@
                 </div>
 
                 <div class="item_06">
+                <a target="_blank" href="http://rezart.agency/portfolio/bjorgwood.com/">
                     <img src="img/sec_06-site-14.png" alt="Design">
+                </a>
                     <!-- <a class="md-trigger site" data-modal="modal_maket">Site name</a> -->
                     <p class="title">Bjorgwood</p>
                     <p class="text">Магазин европейской мебели.</p>
                     <!-- <p class="money">Доход с сайта: $ 5 000/год</p> -->
-                    <a target="_blank" href="http://yurvov.com.ua/mndev/bjorgwood.com/" class="info">
+                    <a target="_blank" href="http://rezart.agency/portfolio/bjorgwood.com/" class="info">
                         <img src="img/sec_06-more_icon.png" alt="">
                     </a>
                     <a class="md-trigger zoom" data-modal="modal_maket">
@@ -606,7 +617,9 @@
                 </div>
 
                 <div class="item_06">
+                <a target="_blank" href="http://myjacket.com.ua/">
                     <img src="img/sec_06-site-3.png" alt="Design">
+                </a>
                     <!-- <a class="md-trigger site" data-modal="modal_maket">Site name</a> -->
                     <p class="title">Angry Dandy</p>
                     <p class="text">Магазин трендовых мужских <br /> курток в Украине.</p>
@@ -620,7 +633,9 @@
                 </div>
 
                 <div class="item_06">
+                <a target="_blank" href="https://www.behance.net/gallery/47134923/Run-Train-by-Mishcenko">
                     <img src="img/sec_06-site-4.png" alt="Design">
+                </a>
                     <!-- <a class="md-trigger site" data-modal="modal_maket">Site name</a> -->
                     <p class="title">Run Train by Mishcenko</p>
                     <p class="text">Практические советы <br /> по профессиональному бегу.</p>
@@ -634,7 +649,9 @@
                 </div>
 
                 <div class="item_06">
+                <a target="_blank" href="http://looklook.com.ua/">
                     <img src="img/sec_06-site-5.png" alt="Design">
+                </a>
                     <!-- <a class="md-trigger  site" data-modal="modal_maket">Site name</a> -->
                     <p class="title">Look Look</p>
                     <p class="text">Студия наращивания ресниц <br /> и ухода за бровями.</p>
@@ -648,7 +665,9 @@
                 </div>
 
                 <div class="item_06">
+                <a target="_blank" href="https://www.behance.net/gallery/36532239/Paris-Beaute">
                     <img src="img/sec_06-site-6.png" alt="Design">
+                </a>
                     <!-- <a class="md-trigger  site" data-modal="modal_maket">Site name</a> -->
                     <p class="title">Paris Beauty</p>
                     <p class="text">Средства из Франции по уходу <br /> за волосами в домашних условиях.</p>
@@ -662,7 +681,9 @@
                 </div>
 
                 <div class="item_06">
+                <a target="_blank" href="https://www.behance.net/gallery/45095199/Wedding-Dresses">
                     <img src="img/sec_06-site-7.png" alt="Design">
+                </a>
                     <!-- <a class="md-trigger  site" data-modal="modal_maket">Site name</a> -->
                     <p class="title">Свадебные Платья</p>
                     <p class="text">Дизайнерские свадебные и вечерние <br /> платья мирового уровня.</p>
@@ -676,7 +697,9 @@
                 </div>
 
                 <div class="item_06">
+                <a target="_blank" href="https://www.behance.net/gallery/37727463/Seychelles-Travel-Landing">
                     <img src="img/sec_06-site-8.png" alt="Design">
+                </a>
                     <!-- <a class="md-trigger  site" data-modal="modal_maket">Site name</a> -->
                     <p class="title">Сейшельские острова</p>
                     <p class="text">Уникальный проект, который навсегда изменит <br> ваше предстваление о путешествиях</p>
@@ -1679,5 +1702,11 @@
     </script>
 
 <script type="text/javascript"> (function (d, w, c) { (w[c] = w[c] || []).push(function() { try { w.yaCounter43002724 = new Ya.Metrika({ id:43002724, clickmap:true, trackLinks:true, accurateTrackBounce:true, webvisor:true, trackHash:true }); } catch(e) { } }); var n = d.getElementsByTagName("script")[0], s = d.createElement("script"), f = function () { n.parentNode.insertBefore(s, n); }; s.type = "text/javascript"; s.async = true; s.src = "https://mc.yandex.ru/metrika/watch.js"; if (w.opera == "[object Opera]") { d.addEventListener("DOMContentLoaded", f, false); } else { f(); } })(document, window, "yandex_metrika_callbacks"); </script> <noscript><div><img src="https://mc.yandex.ru/watch/43002724" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+
+<!-- BEGIN JIVOSITE CODE {literal} -->
+<script type='text/javascript'>
+(function(){ var widget_id = 'eoCvP3F2ua';var d=document;var w=window;function l(){
+var s = document.createElement('script'); s.type = 'text/javascript'; s.async = true; s.src = '//code.jivosite.com/script/widget/'+widget_id; var ss = document.getElementsByTagName('script')[0]; ss.parentNode.insertBefore(s, ss);}if(d.readyState=='complete'){l();}else{if(w.attachEvent){w.attachEvent('onload',l);}else{w.addEventListener('load',l,false);}}})();</script>
+<!-- {/literal} END JIVOSITE CODE -->
     </body>
 </html>
