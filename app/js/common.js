@@ -620,3 +620,11 @@ $('.card').click(function(){
 //     }
 //   }
 // });
+
+
+function n() {
+    if (navigator.userAgent.toLowerCase().indexOf("chrome") > -1) {
+        var t = ["\n %c Made with ♥ by RezartAgency %c %c %c http://rezart.agency// %c %c👻\n\n", "color: #fff; background: #b0976d; padding:5px 0;", "background: #494949; padding:5px 0;", "background: #494949; padding:5px 0;", "color: #fff; background: #1c1c1c; padding:5px 0;", "background: #fff; padding:5px 0;", "color: #b0976d; background: #fff; padding:5px 0;"];
+        window.console.log.apply(console, t)
+    } else window.console && window.console.log("Made with love ♥ RezartAgency - http://rezart.agency/ 👻")
+}; n()

@@ -1156,7 +1156,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         <div class="grid_4">
             <div class="item_12">
                 <p class="title">Что я получу, <br> заказав лендинг?</p>
-                <p class="text">Заказав лендинг, вы получите <br> действенный современный инструмент с отличными скрипами продаж, целым арсеналом инструментов <br> для мотивации покупателей, который 24 часа в сутки каждый день будет рассказывать историю вашего <br> бренда/продукта и приводить вам новых клиентов пока вы занимаетесь другими делами. Попав на ваш <br> лендинг с рекламного объявления, пользователь увидит именно то, <br> что искал.</p>
+                <p class="text">Заказав лендинг, вы получите <br> действенный современный инструмент с отличными скриптами продаж, целым арсеналом инструментов <br> для мотивации покупателей, который 24 часа в сутки каждый день будет рассказывать историю вашего <br> бренда/продукта и приводить вам новых клиентов пока вы занимаетесь другими делами. Попав на ваш <br> лендинг с рекламного объявления, пользователь увидит именно то, <br> что искал.</p>
             </div>
             <div class="item_12">
                 <p class="title">Что даёт разработка <br> посадочных страниц?</p>
@@ -1199,8 +1199,10 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                 <p class="online_request">Online заявку</p>
             </div>
             <div class="row docs_row">
-                <p>Скачайте наш</p>
-                <a class="link_brief" href="http://rezart.agency/docs/brif.docx">Бриф</a>
+                <p>Скачайте нашу</p>
+                <a href="http://rezart.agency/app/Rezart_Prezentation.pdf">Презентацию</a>
+                <p>или</p>
+                <a href="http://rezart.agency/docs/brif.docx">Бриф</a>
             </div>
         </div>
     </div>
@@ -1712,10 +1714,24 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         ]};!function(t,n,r){"use strict";var c=function(t){if("[object Array]"!==Object.prototype.toString.call(t))return!1;for(var r=0;r<t.length;r++){var c=n.createElement("script"),e=t[r];c.src=e.src,c.async=e.async,n.body.appendChild(c)}return!0};t.addEventListener?t.addEventListener("load",function(){c(r.scripts);},!1):t.attachEvent?t.attachEvent("onload",function(){c(r.scripts)}):t.onload=function(){c(r.scripts)}}(window,document,scr);
     </script>
 
-<!-- BEGIN JIVOSITE CODE {literal} -->
-<script type='text/javascript'>
-(function(){ var widget_id = 'eoCvP3F2ua';var d=document;var w=window;function l(){
-var s = document.createElement('script'); s.type = 'text/javascript'; s.async = true; s.src = '//code.jivosite.com/script/widget/'+widget_id; var ss = document.getElementsByTagName('script')[0]; ss.parentNode.insertBefore(s, ss);}if(d.readyState=='complete'){l();}else{if(w.attachEvent){w.attachEvent('onload',l);}else{w.addEventListener('load',l,false);}}})();</script>
-<!-- {/literal} END JIVOSITE CODE -->
+<script>
+(function(){
+var widget_id = 876503;
+_shcp =[{widget_id : widget_id}];
+var lang =(navigator.language || navigator.systemLanguage 
+|| navigator.userLanguage ||"en")
+.substr(0,2).toLowerCase();
+var url ="widget.siteheart.com/widget/sh/"+ widget_id +"/"+ lang +"/widget.js";
+var hcc = document.createElement("script");
+hcc.type ="text/javascript";
+hcc.async =true;
+hcc.src =("https:"== document.location.protocol ?"https":"http")
++"://"+ url;
+var s = document.getElementsByTagName("script")[0];
+s.parentNode.insertBefore(hcc, s.nextSibling);
+})();
+</script>
+
+
     </body>
 </html>
