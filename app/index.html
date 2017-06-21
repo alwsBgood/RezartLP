@@ -19,7 +19,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     <meta charset="utf-8">
 
     <title>Rezart Agency</title>
-    <meta name="description" content=" От идеи до реальных продаж всего за 1 месяц. Создание личных сайтов/блогов, корпоративных сайтов, landing page, построение воронки продаж, аналитика, продающий копирайтинг.">
+    <meta name="description" content="Дизайн который продает. Создание личных сайтов/блогов, корпоративных сайтов, landing page, построение воронки продаж, аналитика, продающий копирайтинг.">
     <meta name="keywords" content="лендинг, landing page, сайт, блог, воронка продаж, клиенты с интернет, Rezart, студия интернет маркетинга, аналитика, продающий копирайтинг">
 
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -1199,7 +1199,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                 <p class="online_request">Online заявку</p>
             </div>
             <div class="row docs_row">
-                <p>Скачайте нашу</p>
+                <p>Скачайте</p>
                 <a href="http://rezart.agency/app/Rezart_Prezentation.pdf">Презентацию</a>
                 <p>или</p>
                 <a href="http://rezart.agency/docs/brif.docx">Бриф</a>
@@ -1714,23 +1714,17 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         ]};!function(t,n,r){"use strict";var c=function(t){if("[object Array]"!==Object.prototype.toString.call(t))return!1;for(var r=0;r<t.length;r++){var c=n.createElement("script"),e=t[r];c.src=e.src,c.async=e.async,n.body.appendChild(c)}return!0};t.addEventListener?t.addEventListener("load",function(){c(r.scripts);},!1):t.attachEvent?t.attachEvent("onload",function(){c(r.scripts)}):t.onload=function(){c(r.scripts)}}(window,document,scr);
     </script>
 
-<script>
-(function(){
-var widget_id = 876503;
-_shcp =[{widget_id : widget_id}];
-var lang =(navigator.language || navigator.systemLanguage 
-|| navigator.userLanguage ||"en")
-.substr(0,2).toLowerCase();
-var url ="widget.siteheart.com/widget/sh/"+ widget_id +"/"+ lang +"/widget.js";
-var hcc = document.createElement("script");
-hcc.type ="text/javascript";
-hcc.async =true;
-hcc.src =("https:"== document.location.protocol ?"https":"http")
-+"://"+ url;
-var s = document.getElementsByTagName("script")[0];
-s.parentNode.insertBefore(hcc, s.nextSibling);
+<!-- Start of LiveChat (www.livechatinc.com) code -->
+<script type="text/javascript">
+window.__lc = window.__lc || {};
+window.__lc.license = 8891229;
+(function() {
+  var lc = document.createElement('script'); lc.type = 'text/javascript'; lc.async = true;
+  lc.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'cdn.livechatinc.com/tracking.js';
+  var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(lc, s);
 })();
 </script>
+<!-- End of LiveChat code -->
 
 
     </body>
