@@ -1191,7 +1191,6 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
             <div class="row tel_row">
                 <p>Позвоните нам</p>
                 <a href="tel:0937007681" class="tel">+38 093 700 76 81</a>
-                <a class="md-trigger skype" data-modal="modal_callback">+38 093 700 76 81</a>
                 <div class="clear"></div>
             </div>
             <div class="row modal_row">
